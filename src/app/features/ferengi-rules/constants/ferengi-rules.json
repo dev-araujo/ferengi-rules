@@ -1,0 +1,295 @@
+{
+  "rules": [
+    {
+      "number": 1,
+      "text": "Uma vez que você tem o dinheiro deles, nunca o devolva."
+    },
+    { "number": 2, "text": "O melhor negócio é aquele que dá o maior lucro." },
+    {
+      "number": 3,
+      "text": "Nunca gaste mais do que o necessário em uma aquisição."
+    },
+    {
+      "number": 4,
+      "text": "Uma mulher usando roupas é como um homem na cozinha."
+    },
+    { "number": 5, "text": "Sempre exagere seus orçamentos." },
+    { "number": 6, "text": "Nunca deixe a família atrapalhar a oportunidade." },
+    { "number": 7, "text": "Mantenha sempre seus ouvidos abertos." },
+    { "number": 8, "text": "Letras pequenas levam a grandes riscos." },
+    { "number": 9, "text": "Instinto, mais oportunidade, igual a lucro." },
+    { "number": 10, "text": "A ganância é eterna." },
+    {
+      "number": 11,
+      "text": "Mesmo se for de graça, você sempre pode comprar mais barato."
+    },
+    {
+      "number": 12,
+      "text": "Qualquer coisa que valha a pena vender, vale a pena vender duas vezes."
+    },
+    {
+      "number": 13,
+      "text": "Qualquer coisa que valha a pena fazer, vale a pena fazer por dinheiro."
+    },
+    { "number": 15, "text": "Homens mortos não fecham negócios." },
+    {
+      "number": 16,
+      "text": "Um acordo é um acordo (é um acordo)... até que um melhor apareça."
+    },
+    {
+      "number": 17,
+      "text": "Um contrato é um contrato é um contrato... mas apenas entre Ferengi."
+    },
+    { "number": 18, "text": "Um Ferengi sem lucro não é Ferengi algum." },
+    { "number": 19, "text": "Satisfação não é garantida." },
+    {
+      "number": 20,
+      "text": "Aquele que se esconde debaixo da mesa hoje, vive para lucrar amanhã."
+    },
+    { "number": 21, "text": "Nunca coloque a amizade antes do lucro." },
+    { "number": 22, "text": "Homens sábios podem ouvir o lucro no vento." },
+    {
+      "number": 23,
+      "text": "Nada é mais importante que sua saúde... exceto seu dinheiro."
+    },
+    { "number": 25, "text": "Você não pode fazer um acordo se estiver morto." },
+    {
+      "number": 27,
+      "text": "Não há nada mais perigoso que um homem de negócios honesto."
+    },
+    { "number": 29, "text": "O que ganho com isso?" },
+    {
+      "number": 30,
+      "text": "Um homem sábio sabe que confidencialidade é igual a lucro."
+    },
+    { "number": 31, "text": "Nunca zombe da mãe de um Ferengi." },
+    { "number": 32, "text": "Insulte algo de que ele se importa." },
+    { "number": 33, "text": "Nunca machuca bajular o chefe." },
+    { "number": 34, "text": "Guerra é bom para os negócios." },
+    { "number": 35, "text": "Paz é bom para os negócios." },
+    { "number": 37, "text": "O investidor inicial colhe o maior interesse." },
+    {
+      "number": 40,
+      "text": "Ela pode tocar seus lóbulos, mas nunca seu latinum."
+    },
+    { "number": 41, "text": "Lucro é sua própria recompensa." },
+    {
+      "number": 43,
+      "text": "Alimente sua ganância, mas não o suficiente para sufocá-la."
+    },
+    { "number": 44, "text": "Nunca confunda sabedoria com sorte." },
+    { "number": 45, "text": "Expanda ou morra." },
+    {
+      "number": 47,
+      "text": "Nunca confie em um homem usando um terno melhor que o seu."
+    },
+    { "number": 48, "text": "Quanto maior o sorriso, mais afiada a faca." },
+    { "number": 52, "text": "Nunca pergunte quando você pode pegar." },
+    { "number": 53, "text": "Nunca confie em alguém mais alto que você." },
+    {
+      "number": 54,
+      "text": "Taxa dividida pelo tempo é igual ao lucro. (Também conhecida como 'A Velocidade da Riqueza'.)"
+    },
+    { "number": 55, "text": "Tire alegria do lucro, e lucro da alegria." },
+    {
+      "number": 57,
+      "text": "Bons clientes são quase tão raros quanto latinum...preze-os."
+    },
+    { "number": 58, "text": "Não há substituto para o sucesso." },
+    { "number": 59, "text": "Conselho grátis raramente é barato." },
+    { "number": 60, "text": "Mantenha suas mentiras consistentes." },
+    { "number": 62, "text": "Quanto mais arriscado o caminho, maior o lucro." },
+    {
+      "number": 63,
+      "text": "Trabalho é a melhor terapia - pelo menos para seus empregados."
+    },
+    {
+      "number": 65,
+      "text": "Ganhe ou perca, sempre há rapé de besouro Hupyrian."
+    },
+    {
+      "number": 69,
+      "text": "Ferengi não é responsável pela estupidez de outras raças."
+    },
+    { "number": 74, "text": "Conhecimento é lucro." },
+    {
+      "number": 75,
+      "text": "Lar é onde o coração está, mas as estrelas são feitas de latinum."
+    },
+    {
+      "number": 76,
+      "text": "De vez em quando, declare paz. Isso confunde seus inimigos pra caramba."
+    },
+    { "number": 77, "text": "Se você quebrar, você compra." },
+    {
+      "number": 79,
+      "text": "Cuidado com a ganância dos Vulcanos por conhecimento."
+    },
+    { "number": 82, "text": "Quanto mais frágil o produto, maior o preço." },
+    {
+      "number": 85,
+      "text": "Nunca deixe a concorrência saber o que você está pensando."
+    },
+    {
+      "number": 87,
+      "text": "Aprenda as fraquezas do cliente, para que você possa tirar melhor proveito dele."
+    },
+    { "number": 88, "text": "Não acaba até que acabe." },
+    {
+      "number": 89,
+      "text": "Não pergunte o que você pode fazer pelos seus lucros, mas o que seus lucros podem fazer por você."
+    },
+    { "number": 92, "text": "Existem muitos caminhos para o lucro." },
+    { "number": 94, "text": "Mulheres e finanças não se misturam." },
+    { "number": 95, "text": "Expanda ou morra." },
+    { "number": 97, "text": "O suficiente... nunca é o suficiente." },
+    { "number": 98, "text": "Todo homem tem seu preço." },
+    { "number": 99, "text": "Confiança é a maior responsabilidade de todas." },
+    {
+      "number": 102,
+      "text": "A naturezase deteriora, mas o latinum dura para sempre."
+    },
+    { "number": 103, "text": "Dormir pode interferir em..." },
+    { "number": 104, "text": "Fé move montanhas... de estoque." },
+    { "number": 106, "text": "Não há honra na pobreza." },
+    { "number": 109, "text": "Dignidade e um saco vazio valem o saco." },
+    { "number": 110, "text": "A exploração começa em casa." },
+    {
+      "number": 111,
+      "text": "Trate as pessoas em sua dívida como família... explore-as."
+    },
+    { "number": 112, "text": "Nunca faça sexo com a irmã do chefe." },
+    { "number": 113, "text": "Sempre faça sexo com o chefe." },
+    { "number": 121, "text": "Tudo está à venda - até a amizade." },
+    {
+      "number": 123,
+      "text": "Até um cego pode reconhecer o brilho do Latinum."
+    },
+    {
+      "number": 125,
+      "text": "Você não pode fazer um acordo se estiver morto."
+    },
+    { "number": 139, "text": "Esposas servem; irmãos herdam." },
+    { "number": 141, "text": "Apenas tolos pagam o preço de varejo." },
+    {
+      "number": 144,
+      "text": "Não há nada de errado com caridade... desde que ela acabe no seu bolso."
+    },
+    { "number": 147, "text": "As pessoas amam o bartender." },
+    { "number": 153, "text": "Venda o brilho, não o bife." },
+    { "number": 162, "text": "Mesmo no pior dos tempos, alguém lucra." },
+    { "number": 168, "text": "Sussurre seu caminho para o sucesso." },
+    {
+      "number": 177,
+      "text": "Conheça seus inimigos... mas sempre faça negócios com eles."
+    },
+    {
+      "number": 181,
+      "text": "Nem a desonestidade pode manchar o brilho do lucro."
+    },
+    {
+      "number": 183,
+      "text": "Quando a vida te der ungaberries, faça detergente."
+    },
+    {
+      "number": 184,
+      "text": "Um Ferengi espera para licitar até que seus oponentes se esgotem."
+    },
+    {
+      "number": 188,
+      "text": "Nem a desonestidade pode manchar o brilho do lucro."
+    },
+    {
+      "number": 189,
+      "text": "Deixe os outros manterem sua reputação. Você fica com o dinheiro deles."
+    },
+    { "number": 190, "text": "Ouça tudo, não confie em nada." },
+    {
+      "number": 192,
+      "text": "Nunca trapaceie um Klingon... a menos que tenha certeza de que pode se safar."
+    },
+    { "number": 193, "text": "Problemas vêm em trios." },
+    {
+      "number": 194,
+      "text": "É sempre um bom negócio saber sobre novos clientes antes que eles entrem na sua porta."
+    },
+    { "number": 199, "text": "Localização, localização, localização." },
+    {
+      "number": 200,
+      "text": "Um Ferengi não escolhe lado além do seu próprio."
+    },
+    { "number": 202, "text": "A justificativa para o lucro é o lucro." },
+    {
+      "number": 203,
+      "text": "Novos clientes são como vermes gree de dentes de navalha. Eles podem ser suculentos, mas às vezes mordem de volta."
+    },
+    {
+      "number": 208,
+      "text": "Às vezes, a única coisa mais perigosa que uma pergunta é uma resposta."
+    },
+    {
+      "number": 211,
+      "text": "Funcionários são os degraus na escada do sucesso, não hesite em pisar neles."
+    },
+    {
+      "number": 212,
+      "text": "Uma boa mentira é mais fácil de acreditar do que a verdade."
+    },
+    {
+      "number": 214,
+      "text": "Nunca comece uma transação comercial de estômago vazio."
+    },
+    { "number": 216, "text": "Nunca aposte com um telepata." },
+    { "number": 217, "text": "Você não pode libertar um peixe da água." },
+    { "number": 218, "text": "Sempre saiba o que você está comprando." },
+    {
+      "number": 218,
+      "text": "Às vezes, o que você ganha de graça custa muito caro."
+    },
+    { "number": 219, "text": "Posse é onze décimos da lei!" },
+    {
+      "number": 223,
+      "text": "Cuidado com o homem que não arranja tempo para Oo-mox."
+    },
+    {
+      "number": 227,
+      "text": "Se é isso que está escrito, então é isso que está escrito."
+    },
+    { "number": 229, "text": "Latinum dura mais que luxúria." },
+    { "number": 235, "text": "Abaixe-se; a morte é alta." },
+    { "number": 236, "text": "Você não pode comprar o destino." },
+    {
+      "number": 239,
+      "text": "Nunca tenha medo de rotular incorretamente um produto."
+    },
+    {
+      "number": 240,
+      "text": "Tempo, como latinum, é uma commodity altamente limitada."
+    },
+    { "number": 242, "text": "Mais é bom... tudo é melhor." },
+    {
+      "number": 255,
+      "text": "Uma esposa é [um] luxo... um contador inteligente, uma necessidade."
+    },
+    {
+      "number": 257,
+      "text": "Quando o mensageiro vier apropriar-se de seus lucros, mate o mensageiro."
+    },
+    {
+      "number": 261,
+      "text": "Um homem rico pode comprar tudo, exceto uma consciência."
+    },
+    {
+      "number": 263,
+      "text": "Nunca deixe a dúvida interferir na sua sede de Latinum."
+    },
+    { "number": 266, "text": "Em caso de dúvida, minta." },
+    {
+      "number": 272,
+      "text": "Sempre inspecione a mercadoria antes de fazer um acordo."
+    },
+    { "number": 280, "text": "Se não está quebrado, não conserte." },
+    { "number": 284, "text": "No fundo, todo mundo é Ferengi." },
+    { "number": 285, "text": "Nenhuma boa ação fica impune." }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "questions": [
+    {
+      "questionText": "Qual é a 1ª Lei de Aquisição?",
+      "alternatives": [
+        { "letter": "A", "text": "Nunca prejudique um freguês." },
+        {
+          "letter": "B",
+          "text": "Uma vez que você tem o dinheiro deles, nunca o devolva."
+        },
+        {
+          "letter": "C",
+          "text": "Nunca gaste mais do que o necessário em uma aquisição."
+        }
+      ],
+      "correctAnswerLetter": "B",
+      "ruleNumber": 1
+    },
+    {
+      "questionText": "Qual é a 6ª Lei de Aquisição?",
+      "alternatives": [
+        {
+          "letter": "A",
+          "text": "Nunca deixe a família atrapalhar a oportunidade."
+        },
+        { "letter": "B", "text": "Não há honra maior do que um bom negócio." },
+        { "letter": "C", "text": "Lucro é lucro." }
+      ],
+      "correctAnswerLetter": "A",
+      "ruleNumber": 6
+    },
+    {
+      "questionText": "Qual é a 9ª Lei de Aquisição?",
+      "alternatives": [
+        {
+          "letter": "A",
+          "text": "Instinto, mais oportunidade, igual a lucro."
+        },
+        { "letter": "B", "text": "Tudo é negociável." },
+        { "letter": "C", "text": "Milagre! Torne-se seu próprio deus." }
+      ],
+      "correctAnswerLetter": "A",
+      "ruleNumber": 9
+    },
+    {
+      "questionText": "Qual é a 10ª Lei de Aquisição?",
+      "alternatives": [
+        { "letter": "A", "text": "A ganância é eterna." },
+        { "letter": "B", "text": "Uma ação justa não encherá suas arcas." },
+        { "letter": "C", "text": "Inimigos de lucro não são amigos." }
+      ],
+      "correctAnswerLetter": "A",
+      "ruleNumber": 10
+    },
+    {
+      "questionText": "Qual é a 18ª Lei de Aquisição?",
+      "alternatives": [
+        { "letter": "A", "text": "Nunca duvide do instinto." },
+        { "letter": "B", "text": "Um Ferengi sem lucro não é Ferengi algum." },
+        { "letter": "C", "text": "O pequeno lucro leva a grandes lucros." }
+      ],
+      "correctAnswerLetter": "B",
+      "ruleNumber": 18
+    },
+    {
+      "questionText": "Qual é a 23ª Lei de Aquisição?",
+      "alternatives": [
+        { "letter": "A", "text": "Nunca seja desonesto intencionalmente." },
+        {
+          "letter": "B",
+          "text": "Nada é mais importante que sua saúde... exceto seu dinheiro."
+        },
+        {
+          "letter": "C",
+          "text": "Não deixe a família atrapalhar seus negócios."
+        }
+      ],
+      "correctAnswerLetter": "B",
+      "ruleNumber": 23
+    },
+    {
+      "questionText": "Qual é a 59ª Lei de Aquisição?",
+      "alternatives": [
+        { "letter": "A", "text": "Clientes são sagrados." },
+        { "letter": "B", "text": "Oportunidade mais instinto igual a lucro." },
+        { "letter": "C", "text": "Conselho grátis raramente é barato." }
+      ],
+      "correctAnswerLetter": "C",
+      "ruleNumber": 59
+    },
+    {
+      "questionText": "Qual é a 62ª Lei de Aquisição?",
+      "alternatives": [
+        {
+          "letter": "A",
+          "text": "Quanto mais arriscado o caminho, maior o lucro."
+        },
+        { "letter": "B", "text": "Não há honra maior do que um bom negócio." },
+        {
+          "letter": "C",
+          "text": "Nunca invista em um negócio onde você não pode ver o lucro."
+        }
+      ],
+      "correctAnswerLetter": "A",
+      "ruleNumber": 62
+    },
+    {
+      "questionText": "Qual é a 94ª Lei de Aquisição?",
+      "alternatives": [
+        { "letter": "A", "text": "Nunca prejudique um freguês." },
+        { "letter": "B", "text": "Mulheres e finanças não se misturam." },
+        { "letter": "C", "text": "Lucro é lucro." }
+      ],
+      "correctAnswerLetter": "B",
+      "ruleNumber": 94
+    },
+    {
+      "questionText": "Qual é a 111ª Lei de Aquisição?",
+      "alternatives": [
+        {
+          "letter": "A",
+          "text": "Trate as pessoas em sua dívida como família... explore-as."
+        },
+        { "letter": "B", "text": "A ganância é eterna." },
+        { "letter": "C", "text": "Milagre! Torne-se seu próprio deus." }
+      ],
+      "correctAnswerLetter": "A",
+      "ruleNumber": 111
+    }
+  ]
+}
