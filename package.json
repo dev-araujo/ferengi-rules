@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
+    "test": "ng test --browsers ChromeHeadless --code-coverage",
+    "test:overview": "ng test --browsers ChromeHeadless --watch=false --code-coverage",
     "serve:ssr:ferengi-rules": "node dist/ferengi-rules/server/server.mjs"
   },
   "private": true,
