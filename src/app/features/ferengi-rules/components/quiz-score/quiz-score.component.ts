@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   imports: [],
   template: `
     <div class="quiz-score">
-      Placar: <span class="quiz-score__value">{{ score }}</span>
+      Lucro : <span class="quiz-score__value">{{ score }}</span> Latinum
     </div>
   `,
   styleUrls: ['./quiz-score.component.scss'],

@@ -39,6 +39,15 @@
     color: colors.$amber-200;
   }
 
+  &__subtitle {
+    font-size: 1.372rem;
+    line-height: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -0.2rem;
+    color: colors.$amber-200;
+  }
+
   &__content {
     background-color: colors.$amber-800-alpha-50;
     border-radius: 0.5rem;
