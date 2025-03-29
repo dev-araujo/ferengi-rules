@@ -1,3 +1,122 @@
-:host {
-  display: block;
+@use "../../../../../styles/colors.scss";
+
+.rules-list {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__nav {
+    width: 100%;
+    max-width: 42rem;
+    text-align: right;
+    margin-bottom: 1rem;
+
+    a {
+      color: colors.$gold-text;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+
+      &:hover {
+        background-color: rgba(colors.$gold-text, 0.15);
+        color: colors.$amber-200;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: colors.$amber-200;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  &__content {
+    background-color: rgba(colors.$amber-900, 0.6);
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.2),
+      0 4px 8px -3px rgba(0, 0, 0, 0.15);
+    padding: 1rem 0.5rem 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 42rem;
+    border: 1px solid rgba(colors.$amber-700, 0.6);
+    overflow-y: auto;
+    max-height: 70vh;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    color: colors.$amber-200;
+  }
+
+  &__item {
+    padding: 0.8rem 1rem 0.8rem 0;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(colors.$gold-text, 0.15);
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: baseline;
+
+    &:nth-child(odd) {
+      background-color: rgba(colors.$amber-800, 0.1);
+    }
+
+    &:hover {
+      background-color: rgba(colors.$gold-text, 0.1);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    strong {
+      flex-shrink: 0;
+      color: colors.$gold-text;
+      font-weight: 600;
+      margin-right: 1rem;
+      min-width: 65px;
+      display: inline-block;
+      text-align: right;
+    }
+  }
+
+  &__empty-message {
+    padding: 1.5rem 1rem;
+    line-height: 1.6;
+    font-style: italic;
+    text-align: center;
+    color: colors.$amber-400;
+  }
+
+  &__content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &__content::-webkit-scrollbar-track {
+    background: rgba(colors.$amber-900, 0.3);
+    border-radius: 4px;
+  }
+
+  &__content::-webkit-scrollbar-thumb {
+    background-color: rgba(colors.$gold-text, 0.6);
+    border-radius: 4px;
+    border: 1px solid rgba(colors.$amber-900, 0.5);
+  }
+
+  &__content::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(colors.$gold-text, 0.8);
+  }
 }
