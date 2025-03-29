@@ -1,0 +1,71 @@
+@use "../../../../../styles/colors.scss";
+
+.quiz-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+
+  &__button {
+    color: colors.$text-color-dark;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+
+    i {
+      margin-left: 0.5rem;
+    }
+
+    &:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 3px rgba(colors.$amber-500, 0.5);
+    }
+
+    &--next {
+      background: linear-gradient(
+        to right,
+        colors.$amber-400,
+        colors.$amber-500
+      );
+      margin-top: 0;
+
+      &:hover {
+        background: linear-gradient(
+          to right,
+          colors.$amber-500,
+          colors.$amber-600
+        );
+        color: white;
+        box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.1),
+          0 3px 5px -1px rgba(0, 0, 0, 0.07);
+      }
+    }
+
+    &--play-again {
+      background: linear-gradient(
+        to right,
+        colors.$amber-500,
+        colors.$amber-600
+      );
+      color: white;
+      margin-top: 0.5rem;
+
+      &:hover {
+        background: linear-gradient(
+          to right,
+          colors.$amber-400,
+          colors.$amber-500
+        );
+      }
+    }
+  }
+}

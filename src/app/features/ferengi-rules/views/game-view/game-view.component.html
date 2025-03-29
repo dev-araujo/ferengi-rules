@@ -1,0 +1,34 @@
+<div class="game-view">
+  <div class="game-view__nav">
+    <a routerLink="../rules">Ver a Lista de Leis</a>
+  </div>
+
+  <h1 class="game-view__title">Quiz: Leis de Aquisição Ferengi</h1>
+  <div class="game-view__content">
+    @if (!isGameOver) {
+    <app-quiz-score [score]="score" />
+    } @if (currentQuestion && !isGameOver) {
+    <div class="game-view__question-area">
+      <app-quiz-question [questionText]="currentQuestion.questionText" />
+
+      <app-quiz-alternatives
+        [alternatives]="currentQuestion.alternatives"
+        [selectedLetter]="selectedAnswerLetter"
+        [correctAnswerLetter]="currentQuestion.correctAnswerLetter"
+        [isDisabled]="isAnswerVerified"
+        [isVerified]="isAnswerVerified"
+        (answerSelected)="handleAnswerSelected($event)"
+      />
+    </div>
+    }
+
+    <app-quiz-feedback [text]="feedbackText" [type]="feedbackType" />
+
+    <app-quiz-actions
+      [showNextButton]="isAnswerVerified && !isGameOver"
+      [showPlayAgainButton]="isGameOver"
+      (next)="handleNextQuestion()"
+      (playAgain)="handlePlayAgain()"
+    />
+  </div>
+</div>

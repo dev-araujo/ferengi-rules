@@ -1,0 +1,30 @@
+@use "../../../../../styles/colors.scss";
+
+.quiz-feedback {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  color: colors.$text-color;
+  background-color: transparent;
+
+  &--correct {
+    background-color: colors.$green-feedback-bg;
+    color: colors.$green-feedback-text;
+    border-color: #10b981;
+  }
+
+  &--incorrect {
+    background-color: colors.$red-feedback-bg;
+    color: colors.$red-feedback-text;
+    border-color: #f87171;
+  }
+}

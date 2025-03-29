@@ -1,0 +1,56 @@
+@use "../../../../../styles/colors.scss";
+
+.quiz-alternatives {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &__item {
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease,
+      box-shadow 0.3s ease, opacity 0.3s ease;
+    text-align: left;
+    background-color: colors.$amber-200-alpha-80;
+    color: colors.$text-color-dark;
+    border: none;
+    width: 100%;
+
+    &:hover:not(:disabled) {
+      background-color: rgba(255, 223, 0, 0.8);
+      color: colors.$text-color-dark;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    &--correct {
+      background-color: colors.$green-correct-bg;
+      color: white;
+      font-weight: bold;
+      cursor: default;
+      opacity: 1;
+    }
+
+    &--incorrect {
+      background-color: colors.$red-incorrect-bg;
+      color: white;
+      cursor: default;
+      opacity: 1;
+    }
+
+    &--disabled {
+      opacity: 0.6;
+    }
+  }
+
+  &__empty {
+    color: colors.$amber-200;
+    text-align: center;
+    padding: 1rem;
+  }
+}

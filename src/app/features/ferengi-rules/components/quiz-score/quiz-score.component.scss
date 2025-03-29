@@ -1,0 +1,10 @@
+@use "../../../../../styles/colors.scss";
+
+.quiz-score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: colors.$gold-text;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
