@@ -23,4 +23,45 @@ export class FerengiRulesService {
   getQuotes(): FerengiQuoteMap {
     return { ...this.ferengiQuotes };
   }
+
+  getFinalFeedbackMessage(score: number): string {
+    const percentage = (score / this.questions.length) * 100;
+
+    const performanceLevels = [
+      {
+        minThreshold: 100,
+        message: `Lucro Máximo! Você tem a sabedoria do Grande Nagus! }`,
+      },
+      {
+        minThreshold: 80,
+        message: `Excelente! Seus lóbulos estão tinindo com o som do lucro! Um desempenho digno de um Ferengi de respeito.`,
+      },
+      {
+        minThreshold: 50,
+        message: `Lucro Razoável. Você não saiu no prejuízo, mas um verdadeiro negociador sempre busca mais. Continue tentando!`,
+      },
+      {
+        minThreshold: 20,
+        message: `Marginal! Você quase saiu de mãos abanando. Precisa ser mais astuto e menos... ahhhh.`,
+      },
+      {
+        minThreshold: 0.01,
+        message: `Prejuízo! Um desempenho vergonhoso. Você está dando latinum de graça? Reveja suas prioridades!}`,
+      },
+      {
+        minThreshold: -Infinity,
+        message: `Nenhum lucro?! Inacreditável! Nem um Dopteriano cego faria pior. Volte para a escola de comércio! `,
+      },
+    ];
+
+    const matchedLevel = performanceLevels.find(
+      (level) => percentage >= level.minThreshold
+    );
+
+    return (
+      `Seu placar final é ${score}!
+       ${matchedLevel?.message}` ||
+      performanceLevels[performanceLevels.length - 1].message
+    );
+  }
 }
