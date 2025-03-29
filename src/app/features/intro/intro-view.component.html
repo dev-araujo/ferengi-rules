@@ -1,0 +1,36 @@
+<div class="intro-view">
+  <button
+    routerLink="/jogo"
+    class="intro-view__skip-button"
+    (click)="skipIntro()"
+  >
+    Pular Introdução &gt;&gt;
+  </button>
+
+  @if (currentSlide) {
+  <div class="intro-view__container">
+    <div class="intro-view__image-area">
+      <img
+        [src]="currentSlide.imageUrl"
+        [alt]="currentSlide.altText"
+        class="intro-view__image"
+      />
+      @if(!currentSlide.imageUrl){
+      <div class="intro-view__image-placeholder">Imagem Indisponível</div>
+      }
+    </div>
+
+    <div class="intro-view__text-area">
+      <p class="intro-view__text">
+        {{ currentSlide.text }}
+      </p>
+    </div>
+
+    <div class="intro-view__next-prompt" (click)="nextSlide()">
+      Próximo... &#x25BC;
+    </div>
+  </div>
+  } @else {
+  <div class="intro-view__loading">Carregando Introdução...</div>
+  }
+</div>

@@ -3,7 +3,7 @@ import { Rule, Question, FerengiQuoteMap } from '../models/ferengi-rules.model';
 import FerengiRules from '../constants/ferengi-rules.json';
 import FerengiQuestions from '../constants/ferengi-questions.json';
 import FerengiQuotes from '../constants/ferengi-quotes.json';
-
+// https://gist.github.com/darkyen/120c46739985ebf3b39b
 @Injectable({
   providedIn: 'root',
 })

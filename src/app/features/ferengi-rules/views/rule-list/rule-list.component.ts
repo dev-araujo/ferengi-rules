@@ -17,7 +17,7 @@ import { FerengiRulesService } from '../../services/ferengi-rules.service';
       </h1>
       <div class="rules-list__content">
         <ul class="rules-list__list">
-          @for (rule of rules; track rule.number) {
+          @for (rule of rules; let i = $index; track i) {
           <li class="rules-list__item">
             <strong>{{ rule.number }}ª Lei:</strong> {{ rule.text }}
           </li>
