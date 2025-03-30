@@ -76,7 +76,7 @@ export class GameViewComponent implements OnInit {
 
     this.currentQuestion = this.questions[this.currentQuestionIndex];
     if (this.currentQuestion) {
-      this.currentQuestion.alternatives = this.shuffleArray(
+      this.currentQuestion.alternatives = this.shuffleAlternatives(
         this.currentQuestion.alternatives
       );
     }
@@ -145,5 +145,15 @@ export class GameViewComponent implements OnInit {
       ];
     }
     return array;
+  }
+
+  private shuffleAlternatives(alternatives: any): any {
+    const texts = alternatives.map((alt: { text: string }) => alt.text);
+    const shuffledTexts = this.shuffleArray([...texts]);
+
+    return alternatives.map((alt: any, index: any) => ({
+      ...alt,
+      text: shuffledTexts[index],
+    }));
   }
 }
