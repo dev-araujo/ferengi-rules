@@ -14,7 +14,7 @@ import { NgClass } from '@angular/common';
   template: `
     @if (text) {
     <div class="quiz-feedback" [ngClass]="modifierClass">
-      @if(image){
+      @if(image && !finalImage){
       <div class="quiz-feedback__reaction">
         <img
           [src]="image"
@@ -22,15 +22,15 @@ import { NgClass } from '@angular/common';
           class="quiz-feedback__reaction-image"
         />
       </div>
-      <span>{{ text }}</span>
+      <span class="quiz-feedback__text">{{ text }}</span>
       } @if(finalImage){
-      <div>
+      <div class="quiz-feedback__final">
         <img
           [src]="finalImage"
           alt="Quark olhando para você"
           class="quiz-feedback__final-image"
         />
-        <p>{{ text }}</p>
+        <p class="quiz-feedback__final-text">{{ text }}</p>
       </div>
       }
     </div>
@@ -55,7 +55,11 @@ export class QuizFeedbackComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['endGame'] && this.endGame) {
       this.finalImage = 'assets/feedback/quark-final.jpg';
-      this.cdr.detectChanges();
     }
+
+    if (!this.endGame) {
+      this.finalImage = null;
+    }
+    this.cdr.detectChanges();
   }
 }

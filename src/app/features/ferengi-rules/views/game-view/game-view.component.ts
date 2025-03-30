@@ -91,7 +91,7 @@ export class GameViewComponent implements OnInit {
     const question = this.currentQuestion;
 
     this.feedbackType = 'incorrect';
-    this.feedbackText = `Incorreto! A resposta certa era a ${question.correctAnswerLetter}. Idiota!!`;
+    this.feedbackText = `Idiota! A resposta certa era a ${question.correctAnswerLetter}!`;
     this.handleImageFeedback(false);
 
     if (selectedLetter === question.correctAnswerLetter) {
@@ -101,7 +101,7 @@ export class GameViewComponent implements OnInit {
         question.alternatives.find((alt) => alt.letter === selectedLetter)
           ?.text ?? '';
       this.handleImageFeedback(true);
-      this.feedbackText = `Correto! A ${question.ruleNumber}ª Lei é: "${correctAnswerText}"`;
+      this.feedbackText = `Isso ! A resposta certa era a ${question.correctAnswerLetter}!"`;
     }
   }
 

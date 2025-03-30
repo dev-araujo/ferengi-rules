@@ -61,4 +61,10 @@
     max-width: 42rem;
     border: 1px solid colors.$amber-700-alpha-50;
   }
+
+  @media (max-width: 640px) {
+    &__title {
+      display: none;
+    }
+  }
 }

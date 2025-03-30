@@ -53,4 +53,10 @@
     text-align: center;
     padding: 1rem;
   }
+
+  @media (max-width: 640px) {
+    &__item {
+      font-size: 1rem;
+    }
+  }
 }

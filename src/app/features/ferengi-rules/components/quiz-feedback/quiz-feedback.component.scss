@@ -4,17 +4,14 @@
   margin-top: 1.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  text-align: center;
   font-weight: bold;
-  min-height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
   color: colors.$text-color;
   background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
 
   &--correct {
     background-color: colors.$green-feedback-bg;
@@ -29,24 +26,47 @@
   }
 
   &__reaction {
-    text-align: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 1rem;
-    min-height: 120px;
     animation: fade-in 0.5s ease-in-out;
   }
 
   &__reaction-image {
-    max-width: 100px;
+    width: 100px;
     height: 100px;
     border-radius: 50%;
-
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
     object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   &__final-image {
+    width: 100%;
     max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  &__final-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    width: 100%;
   }
 
   @keyframes fade-in {
@@ -57,6 +77,52 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 0.8rem;
+    margin-top: 1rem;
+    flex-direction: column;
+
+    &__reaction {
+      margin-right: 0;
+      margin-bottom: 0.8rem;
+    }
+
+    &__reaction-image {
+      width: 80px;
+      height: 80px;
+    }
+
+    &__final-image {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    &__final-text {
+      font-size: 1rem;
+      text-align: left;
+      padding: 0 0.5rem;
+    }
+
+    &--correct,
+    &--incorrect {
+      position: sticky;
+      bottom: 0;
+      z-index: 10;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (min-width: 641px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+
+    &__final {
+      padding: 1.5rem;
     }
   }
 }
