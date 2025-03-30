@@ -15,7 +15,7 @@ export class IntroViewComponent {
 
   readonly slides: IntroSlide[] = [
     {
-      imageUrl: '../../../assets/intro/intro/tower-commerce.jpg',
+      imageUrl: '../../../assets/intro/tower-commerce.jpg',
       altText: 'Vista da Torre do Comércio em Ferenginar',
       text: 'Bem-vindo(a), aspirante a negociador(a), à magnífica Ferenginar, coração pulsante do comércio e epicentro do lucro universal!',
     },
