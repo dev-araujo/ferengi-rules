@@ -22,8 +22,12 @@
       />
     </div>
     }
-
-    <app-quiz-feedback [text]="feedbackText" [type]="feedbackType" />
+    <app-quiz-feedback
+      [text]="feedbackText"
+      [type]="feedbackType"
+      [image]="reactionImageUrl"
+      [endGame]="gamming"
+    />
 
     <app-quiz-actions
       [showNextButton]="isAnswerVerified && !isGameOver"

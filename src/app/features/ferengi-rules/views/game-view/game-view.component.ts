@@ -35,6 +35,8 @@ export class GameViewComponent implements OnInit {
   feedbackType: 'correct' | 'incorrect' | '' = '';
   selectedAnswerLetter: string | null = null;
   isAnswerVerified: boolean = false;
+  reactionImageUrl: string | null = null;
+  gamming = false;
 
   ngOnInit(): void {
     this.loadGameData();
@@ -53,6 +55,7 @@ export class GameViewComponent implements OnInit {
     this.feedbackType = '';
     this.selectedAnswerLetter = null;
     this.isAnswerVerified = false;
+    this.reactionImageUrl = null;
     this.questions = this.shuffleArray(this.questions);
     this.loadQuestion();
   }
@@ -62,8 +65,11 @@ export class GameViewComponent implements OnInit {
     this.isAnswerVerified = false;
     this.feedbackText = '';
     this.feedbackType = '';
+    this.reactionImageUrl = null;
+    this.gamming = this.currentQuestionIndex >= this.questions.length;
 
     if (this.currentQuestionIndex >= this.questions.length) {
+      this.reactionImageUrl = null;
       this.endGame();
       return;
     }
@@ -86,6 +92,7 @@ export class GameViewComponent implements OnInit {
 
     this.feedbackType = 'incorrect';
     this.feedbackText = `Incorreto! A resposta certa era a ${question.correctAnswerLetter}. Idiota!!`;
+    this.handleImageFeedback(false);
 
     if (selectedLetter === question.correctAnswerLetter) {
       this.score++;
@@ -93,9 +100,17 @@ export class GameViewComponent implements OnInit {
       const correctAnswerText =
         question.alternatives.find((alt) => alt.letter === selectedLetter)
           ?.text ?? '';
+      this.handleImageFeedback(true);
       this.feedbackText = `Correto! A ${question.ruleNumber}ª Lei é: "${correctAnswerText}"`;
     }
   }
+
+  handleImageFeedback(right: boolean): void {
+    this.reactionImageUrl = right
+      ? 'assets/feedback/quark-happy.jpg'
+      : 'assets/feedback/quark-angry.webp';
+  }
+
   handleNextQuestion(): void {
     if (!this.isGameOver) {
       this.currentQuestionIndex++;

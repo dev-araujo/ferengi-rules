@@ -1,9 +1,5 @@
 <div class="intro-view">
-  <button
-    routerLink="/jogo"
-    class="intro-view__skip-button"
-    (click)="skipIntro()"
-  >
+  <button routerLink="/jogo" class="intro-view__skip-button">
     Pular Introdução &gt;&gt;
   </button>
 
@@ -27,7 +23,7 @@
     </div>
 
     <div class="intro-view__next-prompt" (click)="nextSlide()">
-      Próximo... &#x25BC;
+      {{ buttonText }} &#x25BC;
     </div>
   </div>
   } @else {

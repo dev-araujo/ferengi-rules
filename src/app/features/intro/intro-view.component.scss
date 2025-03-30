@@ -2,11 +2,13 @@
 
 .intro-view {
   font-family: "Press Start 2P", cursive;
+  height: 98vh;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+
   padding: 1rem;
   position: relative;
 
