@@ -107,7 +107,7 @@ export class GameViewComponent implements OnInit {
 
   handleImageFeedback(right: boolean): void {
     this.reactionImageUrl = right
-      ? 'assets/feedback/quark-happy.jpg'
+      ? 'assets/feedback/quark-happy.webp'
       : 'assets/feedback/quark-angry.webp';
   }
 

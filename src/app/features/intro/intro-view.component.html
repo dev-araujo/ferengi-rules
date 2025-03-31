@@ -10,6 +10,7 @@
         [src]="currentSlide.imageUrl"
         [alt]="currentSlide.altText"
         class="intro-view__image"
+        loading="lazy"
       />
       @if(!currentSlide.imageUrl){
       <div class="intro-view__image-placeholder">Imagem Indisponível</div>

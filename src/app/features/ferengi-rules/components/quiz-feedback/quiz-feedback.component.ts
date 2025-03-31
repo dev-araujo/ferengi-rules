@@ -20,6 +20,7 @@ import { NgClass } from '@angular/common';
           [src]="image"
           alt="Reação do Quark"
           class="quiz-feedback__reaction-image"
+          loading="lazy"
         />
       </div>
       <span class="quiz-feedback__text">{{ text }}</span>
@@ -29,6 +30,7 @@ import { NgClass } from '@angular/common';
           [src]="finalImage"
           alt="Quark olhando para você"
           class="quiz-feedback__final-image"
+          loading="lazy"
         />
         <p class="quiz-feedback__final-text">{{ text }}</p>
       </div>
@@ -54,7 +56,7 @@ export class QuizFeedbackComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['endGame'] && this.endGame) {
-      this.finalImage = 'assets/feedback/quark-final.jpg';
+      this.finalImage = 'assets/feedback/quark-final.webp';
     }
 
     if (!this.endGame) {
