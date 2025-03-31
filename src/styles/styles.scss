@@ -2,10 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
@@ -17,7 +28,7 @@ body {
     colors.$amber-900,
     colors.$amber-700
   );
-  color: white;
-  height: 100vh;
-  overflow: auto;
+  color: colors.$text-color;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
