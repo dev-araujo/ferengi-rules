@@ -1,21 +1,30 @@
 $amber-900: #78350f;
 $amber-800: #92400e;
 $amber-700: #b45309;
+$amber-600: #d97706;
+$amber-500: #f59e0b;
+$amber-400: #fbbf24;
+$amber-200: #fde68a;
+
+$amber-900-alpha-80: rgba(134, 64, 24, 0.658);
 $amber-800-alpha-50: rgba(146, 64, 14, 0.5);
 $amber-700-alpha-50: rgba(180, 83, 9, 0.5);
-$amber-200: #fde68a;
 $amber-200-alpha-80: rgba(253, 230, 138, 0.8);
-$amber-500: #f59e0b;
-$amber-600: #d97706;
-$amber-400: #fbbf24;
 
-$text-color: white;
-$text-color-dark: #374151;
+$text-light: #ffffff;
+$text-light-secondary: $amber-200;
+$text-dark: #1f2937;
 
-$gold-text: #ffda21;
-$green-correct-bg: rgba(52, 211, 153, 0.9);
-$red-incorrect-bg: rgba(248, 113, 113, 0.9);
-$green-feedback-bg: #d1fae5;
-$green-feedback-text: #065f46;
-$red-feedback-bg: #fee2e2;
-$red-feedback-text: #991b1b;
+$gold-highlight: #ffda21;
+$success-bg: #10b981;
+$success-text: $text-light;
+$error-bg: #ef4444;
+$error-text: $text-light;
+$feedback-success-bg: #ecfdf5;
+$feedback-success-text: #065f46;
+$feedback-error-bg: #fef2f2;
+$feedback-error-text: #991b1b;
+
+$neutral-bg-dark: #1a110a;
+$neutral-bg-medium: $amber-900;
+$neutral-border: rgba($amber-500, 0.3);

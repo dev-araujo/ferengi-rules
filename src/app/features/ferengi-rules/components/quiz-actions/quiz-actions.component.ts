@@ -7,19 +7,19 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   template: `
     <div class="quiz-actions">
       @if (showNextButton) {
-      <button
+      <a
         class="quiz-actions__button quiz-actions__button--next"
         (click)="next.emit()"
       >
-        Próxima Pergunta <i class="fas fa-arrow-right"></i>
-      </button>
+        Próxima Pergunta &gt;&gt;
+      </a>
       } @if (showPlayAgainButton) {
-      <button
+      <a
         class="quiz-actions__button quiz-actions__button--play-again"
         (click)="playAgain.emit()"
       >
         Jogar Novamente
-      </button>
+      </a>
       }
     </div>
   `,
