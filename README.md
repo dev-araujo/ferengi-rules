@@ -12,17 +12,17 @@ Os Ferengi em Star Trek simbolizam uma sátira do capitalismo extremo e da cultu
 
 > Saiba mais sobre os Ferengis [aqui](https://memory-alpha.fandom.com/pt/wiki/Ferengi#:~:text=Os%20ferengis%20ou%20ferenguis%20s%C3%A3o,afiados%20e%20a%20baixa%20estatura.)
 
-## Feito com 🔨
-
-- **Frontend**: Angular
-
-Agradecimentos especiais ao [darkyen](https://gist.github.com/darkyen) que compilou as leis ferengi [aqui](https://gist.github.com/darkyen/120c46739985ebf3b39b)
-
 ## Resultado ✨
 
 **[➡️ Confira o resultado AQUI ⬅️](https://ferengi-rules.vercel.app/)**
 
 ![Interface do Jogo Ferengi](./src/assets/wallpaper.png)
+
+## Feito com 🔨
+
+- **Frontend**: Angular
+
+Agradecimentos especiais ao [darkyen](https://gist.github.com/darkyen) que compilou as leis ferengi [aqui](https://gist.github.com/darkyen/120c46739985ebf3b39b)
 
 ## Funcionalidades
 
