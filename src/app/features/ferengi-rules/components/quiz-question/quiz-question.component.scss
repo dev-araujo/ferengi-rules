@@ -6,9 +6,9 @@
   flex-shrink: 0;
 
   &__text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
-    color: colors.$text-light-secondary;
+    color: colors.$retro-text;
     text-align: center;
     font-weight: 500;
   }
@@ -16,13 +16,13 @@
 
 @media (min-width: bp.$breakpoint-sm) {
   .quiz-question__text {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.7;
   }
 }
 
 @media (min-width: bp.$breakpoint-md) {
   .quiz-question__text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }

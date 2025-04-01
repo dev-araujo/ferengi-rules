@@ -7,7 +7,7 @@
     <h3 class="game-view__subtitle">Prova para cidadania Ferengi</h3>
   </div>
 
-  <div class="game-view__content">
+  <div class="game-view__content" #gameContent>
     @if (!isGameOver) {
     <app-quiz-score [score]="score" />
     } @if (currentQuestion && !isGameOver) {

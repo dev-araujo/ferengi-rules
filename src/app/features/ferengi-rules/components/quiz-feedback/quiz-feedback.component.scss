@@ -1,39 +1,37 @@
 @use "../../../../../styles/colors" as colors;
-@use "../../../../../styles/breakpoints" as bp;
+@use "../../../../../styles/_breakpoints" as bp;
 
 .quiz-feedback {
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
-  color: colors.$text-dark;
+  padding: 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  color: colors.$retro-text;
   background-color: transparent;
   width: 100%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  min-height: 50px;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  min-height: 70px;
 
   &--correct,
   &--incorrect {
-    border-color: transparent;
-    color: colors.$text-dark;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: colors.$white;
+    box-shadow: 4px 4px 0px 0px colors.$retro-border-dark;
+    border-color: colors.$retro-border-dark;
   }
 
   &--correct {
-    background-color: colors.$feedback-success-bg;
-    color: colors.$feedback-success-text;
+    border-left: 6px solid colors.$retro-success;
+    color: colors.$retro-success;
   }
 
   &--incorrect {
-    background-color: colors.$feedback-error-bg;
-    color: colors.$feedback-error-text;
+    border-left: 6px solid colors.$retro-error;
+    color: colors.$retro-error;
   }
 
   &__reaction {
@@ -48,16 +46,18 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid colors.$retro-border-dark;
     object-fit: cover;
     display: block;
+    background-color: colors.$retro-bg;
   }
 
   &__text {
     text-align: left;
     flex-grow: 1;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
+    font-weight: 600;
   }
 
   &__final {
@@ -66,23 +66,25 @@
     align-items: center;
     width: 100%;
     text-align: center;
-    gap: 1rem;
+    gap: 1.5rem;
     animation: fade-in 0.5s ease-in-out;
+    margin-top: 1rem;
   }
 
   &__final-image {
-    width: auto;
     max-width: 100%;
     max-height: 300px;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 2px solid colors.$retro-border-dark;
     display: block;
+    background-color: colors.$retro-bg;
   }
   &__final-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
-    color: colors.$text-light-secondary;
+    color: colors.$retro-text;
     font-weight: 500;
+    max-width: 60ch;
   }
 
   @keyframes fade-in {
@@ -100,7 +102,8 @@
 @media (min-width: bp.$breakpoint-sm) {
   .quiz-feedback {
     padding: 1.25rem 1.5rem;
-    min-height: 70px;
+    min-height: 80px;
+    gap: 1.5rem;
 
     &__reaction-image {
       width: 70px;
@@ -108,14 +111,14 @@
     }
 
     &__text {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     &__final-image {
       max-height: 350px;
     }
     &__final-text {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 }

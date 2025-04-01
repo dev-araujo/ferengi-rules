@@ -1,66 +1,23 @@
 @use "../../../../../styles/colors" as colors;
-@use "../../../../../styles/breakpoints" as bp;
-
+@use "../../../../../styles/_breakpoints" as bp;
+@use "../../../../../styles/styles" as styles;
 .quiz-actions {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   width: 100%;
+  margin-top: 1.5rem;
 
   &__button {
-    color: colors.$text-dark;
-    font-weight: 600;
-    padding: 0.8rem 1.75rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.3;
-    text-align: center;
-
-    i {
-      margin-left: 0.6rem;
-      font-size: 0.9em;
-    }
-
-    &:focus-visible {
-      outline: 3px solid rgba(colors.$gold-highlight, 0.6);
-      outline-offset: 2px;
-    }
-
-    &--next,
-    &--play-again {
-      color: colors.$gold-highlight;
-      border: 1px solid colors.$amber-500;
-      display: inline-block;
-      &:hover {
-        background-color: rgba(colors.$gold-highlight, 0.15);
-        color: colors.$amber-200;
-        border-color: colors.$gold-highlight;
-      }
-
-      &:active {
-        transform: translateY(0);
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-      }
-    }
+    @include styles.retro-button-styles;
   }
 }
 
 @media (min-width: bp.$breakpoint-sm) {
   .quiz-actions {
     justify-content: flex-end;
-
-    &__button {
-      padding: 1rem 2rem;
-      font-size: 1.1rem;
-    }
+    margin-top: 0;
   }
 }

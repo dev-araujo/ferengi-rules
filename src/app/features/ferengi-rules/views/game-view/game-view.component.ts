@@ -1,4 +1,10 @@
-import { Component, OnInit, inject } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  inject,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Question } from '../../models/ferengi-rules.model';
 import { FerengiRulesService } from '../../services/ferengi-rules.service';
@@ -24,6 +30,7 @@ import { QuizActionsComponent } from '../../components/quiz-actions/quiz-actions
   styleUrls: ['./game-view.component.scss'],
 })
 export class GameViewComponent implements OnInit {
+  @ViewChild('gameContent') private gameContentRef!: ElementRef<HTMLDivElement>;
   private ferengiRulesService = inject(FerengiRulesService);
 
   questions: Question[] = [];
@@ -68,6 +75,8 @@ export class GameViewComponent implements OnInit {
     this.reactionImageUrl = null;
     this.gamming = this.currentQuestionIndex >= this.questions.length;
 
+    this.resetScroll();
+
     if (this.currentQuestionIndex >= this.questions.length) {
       this.reactionImageUrl = null;
       this.endGame();
@@ -103,6 +112,8 @@ export class GameViewComponent implements OnInit {
       this.handleImageFeedback(true);
       this.feedbackText = `Isso ! A resposta certa era a ${question.correctAnswerLetter}!"`;
     }
+
+    this.scrollToFeedback();
   }
 
   handleImageFeedback(right: boolean): void {
@@ -131,6 +142,8 @@ export class GameViewComponent implements OnInit {
       this.score
     );
     this.isAnswerVerified = false;
+
+    this.scrollToFeedback();
   }
 
   private shuffleArray<T>(array: T[]): T[] {
@@ -155,5 +168,33 @@ export class GameViewComponent implements OnInit {
       ...alt,
       text: shuffledTexts[index],
     }));
+  }
+
+  private scrollToFeedback(): void {
+    setTimeout(() => {
+      try {
+        const element = this.gameContentRef?.nativeElement;
+        if (element) {
+          if (element.scrollHeight > element.clientHeight) {
+            element.scroll({ top: element.scrollHeight, behavior: 'smooth' });
+          }
+        }
+      } catch (err) {
+        console.error('Erro ao rolar para o feedback:', err);
+      }
+    }, 50);
+  }
+
+  private resetScroll(): void {
+    setTimeout(() => {
+      try {
+        const element = this.gameContentRef?.nativeElement;
+        if (element) {
+          element.scroll({ top: 0, behavior: 'auto' });
+        }
+      } catch (err) {
+        console.error('Erro ao resetar scroll:', err);
+      }
+    }, 0);
   }
 }
