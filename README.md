@@ -1,6 +1,6 @@
 <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=5965E0&labelColor=121214" alt="License">
 
-# Ferengi Rules of Acquisition Quiz
+# Quiz sobre As Leis de Aquisição Ferengi
 
 Este projeto é um divertido jogo de **quiz interativo**, desenvolvido com **Angular** 👽, como uma homenagem aos **Ferengi** e suas infames Leis de Aquisição do universo de Star Trek 🖖.
 
