@@ -2,7 +2,7 @@
 
 # Quiz sobre As Leis de Aquisição Ferengi
 
-Este projeto é um divertido jogo de **quiz interativo**, desenvolvido com **Angular** 👽, como uma homenagem aos **Ferengi** e suas infames Leis de Aquisição do universo de Star Trek 🖖.
+Este projeto é um divertido jogo de **quiz interativo**, desenvolvido com **Angular** 👽 + **Storybook** (para documentação dos componentes), como uma homenagem aos **Ferengi** e suas infames Leis de Aquisição do universo de Star Trek 🖖.
 
 Ele simula um teste de conhecimento sobre as regras que governam a sociedade Ferengi, responda a perguntas de múltipla escolha, receba feedback instantâneo (com reações do próprio Quark!) e veja se você tem a astúcia necessária para acumular seu Latinum virtual!
 
