@@ -2,7 +2,7 @@
 
 # Quiz sobre As Leis de Aquisição Ferengi
 
-Este projeto é um divertido jogo de **quiz interativo**, desenvolvido com **Angular** 👽, como uma homenagem aos **Ferengi** e suas infames Leis de Aquisição do universo de Star Trek 🖖.
+Este projeto é um divertido jogo de **quiz interativo**, desenvolvido com **Angular** 👽 + **Storybook** (para documentação dos componentes), como uma homenagem aos **Ferengi** e suas infames Leis de Aquisição do universo de Star Trek 🖖.
 
 Ele simula um teste de conhecimento sobre as regras que governam a sociedade Ferengi, responda a perguntas de múltipla escolha, receba feedback instantâneo (com reações do próprio Quark!) e veja se você tem a astúcia necessária para acumular seu Latinum virtual!
 
@@ -20,7 +20,8 @@ Os Ferengi em Star Trek simbolizam uma sátira do capitalismo extremo e da cultu
 
 ## Feito com 🔨
 
-- **Frontend**: Angular
+- **Angular**
+- **Storybook** 
 
 Agradecimentos especiais ao [darkyen](https://gist.github.com/darkyen) que compilou as leis ferengi [aqui](https://gist.github.com/darkyen/120c46739985ebf3b39b)
 
