@@ -20,7 +20,8 @@ Os Ferengi em Star Trek simbolizam uma sátira do capitalismo extremo e da cultu
 
 ## Feito com 🔨
 
-- **Frontend**: Angular
+- **Angular**
+- **Storybook** 
 
 Agradecimentos especiais ao [darkyen](https://gist.github.com/darkyen) que compilou as leis ferengi [aqui](https://gist.github.com/darkyen/120c46739985ebf3b39b)
 
