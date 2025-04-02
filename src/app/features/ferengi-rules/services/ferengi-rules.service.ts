@@ -46,7 +46,7 @@ export class FerengiRulesService {
       },
       {
         minThreshold: 0.01,
-        message: `Prejuízo! Um desempenho vergonhoso. Você está dando latinum de graça? Reveja suas prioridades!}`,
+        message: `Prejuízo! Um desempenho vergonhoso. Você está dando latinum de graça? Reveja suas prioridades!`,
       },
       {
         minThreshold: -Infinity,

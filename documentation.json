@@ -1,0 +1,2085 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "Alternative",
+            "id": "interface-Alternative-33e857de3e351f85c2759c58ec72f934aa0c3ad648d2710cb9110c281b78b13d50fc805b2d943bbbfe9940cfb6677426c2aa8c465a4010b27d1dfe9a605b70b8",
+            "file": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Rule {\n  number: number | string;\n  text: string;\n}\n\nexport interface Alternative {\n  letter: string;\n  text: string;\n}\n\nexport interface Question {\n  questionText: string;\n  alternatives: Alternative[];\n  correctAnswerLetter: string;\n  ruleNumber: number;\n}\n\nexport interface FerengiQuoteMap {\n  [score: number]: string;\n}\n",
+            "properties": [
+                {
+                    "name": "letter",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "FerengiQuoteMap",
+            "id": "interface-FerengiQuoteMap-33e857de3e351f85c2759c58ec72f934aa0c3ad648d2710cb9110c281b78b13d50fc805b2d943bbbfe9940cfb6677426c2aa8c465a4010b27d1dfe9a605b70b8",
+            "file": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Rule {\n  number: number | string;\n  text: string;\n}\n\nexport interface Alternative {\n  letter: string;\n  text: string;\n}\n\nexport interface Question {\n  questionText: string;\n  alternatives: Alternative[];\n  correctAnswerLetter: string;\n  ruleNumber: number;\n}\n\nexport interface FerengiQuoteMap {\n  [score: number]: string;\n}\n",
+            "properties": [],
+            "indexSignatures": [
+                {
+                    "id": "index-declaration-33e857de3e351f85c2759c58ec72f934aa0c3ad648d2710cb9110c281b78b13d50fc805b2d943bbbfe9940cfb6677426c2aa8c465a4010b27d1dfe9a605b70b8",
+                    "args": [
+                        {
+                            "name": "score",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "returnType": "string",
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "kind": 181,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "IntroSlide",
+            "id": "interface-IntroSlide-9cdcbcfb4ce20bad5352e6b2164c893cda715a86a430f964bac1fa035ad846fb7b688661eca3faf1de20207783121ca98e728ac4c1cae0218374bae3356416c5",
+            "file": "src/app/features/intro/models/intro.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface IntroSlide {\n  imageUrl: string;\n  altText: string;\n  text: string;\n}\n",
+            "properties": [
+                {
+                    "name": "altText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "imageUrl",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Question",
+            "id": "interface-Question-33e857de3e351f85c2759c58ec72f934aa0c3ad648d2710cb9110c281b78b13d50fc805b2d943bbbfe9940cfb6677426c2aa8c465a4010b27d1dfe9a605b70b8",
+            "file": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Rule {\n  number: number | string;\n  text: string;\n}\n\nexport interface Alternative {\n  letter: string;\n  text: string;\n}\n\nexport interface Question {\n  questionText: string;\n  alternatives: Alternative[];\n  correctAnswerLetter: string;\n  ruleNumber: number;\n}\n\nexport interface FerengiQuoteMap {\n  [score: number]: string;\n}\n",
+            "properties": [
+                {
+                    "name": "alternatives",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Alternative[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "correctAnswerLetter",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "questionText",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "ruleNumber",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Rule",
+            "id": "interface-Rule-33e857de3e351f85c2759c58ec72f934aa0c3ad648d2710cb9110c281b78b13d50fc805b2d943bbbfe9940cfb6677426c2aa8c465a4010b27d1dfe9a605b70b8",
+            "file": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Rule {\n  number: number | string;\n  text: string;\n}\n\nexport interface Alternative {\n  letter: string;\n  text: string;\n}\n\nexport interface Question {\n  questionText: string;\n  alternatives: Alternative[];\n  correctAnswerLetter: string;\n  ruleNumber: number;\n}\n\nexport interface FerengiQuoteMap {\n  [score: number]: string;\n}\n",
+            "properties": [
+                {
+                    "name": "number",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number | string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "FerengiRulesService",
+            "id": "injectable-FerengiRulesService-19adef43cc9ba416b7ceba98b21ee139ca95d948d31ad0ad5af87d439090c1d3390dbd3711e5d3814f9975f6dc36b2c79a3acf2a3442fd7a89d28eb0117e3341",
+            "file": "src/app/features/ferengi-rules/services/ferengi-rules.service.ts",
+            "properties": [
+                {
+                    "name": "ferengiQuotes",
+                    "defaultValue": "FerengiQuotes.quotes",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "FerengiQuoteMap",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "questions",
+                    "defaultValue": "FerengiQuestions.questions",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Question[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "rules",
+                    "defaultValue": "FerengiRules.rules",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Rule[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getFinalFeedbackMessage",
+                    "args": [
+                        {
+                            "name": "score",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "score",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getQuestions",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Question[]",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getQuotes",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "FerengiQuoteMap",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getRules",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Rule[]",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { Rule, Question, FerengiQuoteMap } from '../models/ferengi-rules.model';\nimport FerengiRules from '../constants/ferengi-rules.json';\nimport FerengiQuestions from '../constants/ferengi-questions.json';\nimport FerengiQuotes from '../constants/ferengi-quotes.json';\n// https://gist.github.com/darkyen/120c46739985ebf3b39b\n@Injectable({\n  providedIn: 'root',\n})\nexport class FerengiRulesService {\n  private rules: Rule[] = FerengiRules.rules;\n  private questions: Question[] = FerengiQuestions.questions;\n  private ferengiQuotes: FerengiQuoteMap = FerengiQuotes.quotes;\n\n  getRules(): Rule[] {\n    return [...this.rules];\n  }\n\n  getQuestions(): Question[] {\n    return [...this.questions];\n  }\n\n  getQuotes(): FerengiQuoteMap {\n    return { ...this.ferengiQuotes };\n  }\n\n  getFinalFeedbackMessage(score: number): string {\n    const percentage = (score / this.questions.length) * 100;\n\n    const performanceLevels = [\n      {\n        minThreshold: 100,\n        message: `Lucro Máximo! Você tem a sabedoria do Grande Nagus! }`,\n      },\n      {\n        minThreshold: 80,\n        message: `Excelente! Seus lóbulos estão tinindo com o som do lucro! Um desempenho digno de um Ferengi de respeito.`,\n      },\n      {\n        minThreshold: 50,\n        message: `Lucro Razoável. Você não saiu no prejuízo, mas um verdadeiro negociador sempre busca mais. Continue tentando!`,\n      },\n      {\n        minThreshold: 20,\n        message: `Marginal! Você quase saiu de mãos abanando. Precisa ser mais astuto e menos... ahhhh.`,\n      },\n      {\n        minThreshold: 0.01,\n        message: `Prejuízo! Um desempenho vergonhoso. Você está dando latinum de graça? Reveja suas prioridades!`,\n      },\n      {\n        minThreshold: -Infinity,\n        message: `Nenhum lucro?! Inacreditável! Nem um Dopteriano cego faria pior. Volte para a escola de comércio! `,\n      },\n    ];\n\n    const matchedLevel = performanceLevels.find(\n      (level) => percentage >= level.minThreshold\n    );\n\n    return (\n      `Seu placar final é ${score}!\n       ${matchedLevel?.message}` ||\n      performanceLevels[performanceLevels.length - 1].message\n    );\n  }\n}\n",
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-984aca054300295f95ba3c2219538739092a7e0cf4481d3e56355c9c0abf81867aab67088a4627fbc15a30f4c7e5223063d20186b3a0edd0022ef21ee29c4f84",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'ferengi-rules'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterOutlet"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n\n@Component({\n  selector: 'app-root',\n  imports: [RouterOutlet],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.scss'\n})\nexport class AppComponent {\n  title = 'ferengi-rules';\n}\n",
+            "styleUrl": "./app.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<router-outlet />\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-7aef747e75327027dcfbe8048a4ada6ff5ec302431158a8936ae400da67dab4cd8aa1434b150a4a7af8fcedf3f99eef64b65d9603669c9fd1c40f6410fc0901e",
+            "file": "src/app/shared/button/button/button.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<button class=\"default-button\" (click)=\"callEvent.emit()\">    {{ text }}\n  </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "text",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "callEvent",
+                    "defaultValue": "new EventEmitter<void>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  EventEmitter,\n  Input,\n  Output,\n} from '@angular/core';\n\n@Component({\n  selector: 'app-button',\n  imports: [],\n  template: `<button class=\"default-button\" (click)=\"callEvent.emit()\">\n    {{ text }}\n  </button>`,\n  styleUrl: './button.component.scss',\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ButtonComponent {\n  @Input() text: string = '';\n  @Output() callEvent = new EventEmitter<void>();\n}\n",
+            "styleUrl": "./button.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "GameViewComponent",
+            "id": "component-GameViewComponent-5cba0a14991be31771c17ecfe08d629330564b63fc4ed0f57e43fa47d79eb8e71bcb1f7c86aeb00a9594220ac6c7356842d424aca19875e42cf0bfb7fc91fd35",
+            "file": "src/app/features/ferengi-rules/views/game-view/game-view.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-game-view",
+            "styleUrls": [
+                "./game-view.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./game-view.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "currentQuestion",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Question | null",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "currentQuestionIndex",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                },
+                {
+                    "name": "feedbackText",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 41
+                },
+                {
+                    "name": "feedbackType",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"correct\" | \"incorrect\" | string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 42
+                },
+                {
+                    "name": "ferengiRulesService",
+                    "defaultValue": "inject(FerengiRulesService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 34,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "gameContentRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef<HTMLDivElement>",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 33,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'gameContent'"
+                        }
+                    ],
+                    "modifierKind": [
+                        170,
+                        123
+                    ]
+                },
+                {
+                    "name": "gamming",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 46
+                },
+                {
+                    "name": "isAnswerVerified",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                },
+                {
+                    "name": "isGameOver",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                },
+                {
+                    "name": "questions",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Question[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 36
+                },
+                {
+                    "name": "reactionImageUrl",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
+                },
+                {
+                    "name": "score",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 39
+                },
+                {
+                    "name": "selectedAnswerLetter",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 43
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "endGame",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 136,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "handleAnswerSelected",
+                    "args": [
+                        {
+                            "name": "selectedLetter",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 93,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "selectedLetter",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "handleImageFeedback",
+                    "args": [
+                        {
+                            "name": "right",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 119,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "right",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "handleNextQuestion",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 125,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "handlePlayAgain",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 132,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "loadGameData",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 53,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "loadQuestion",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 48,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "resetScroll",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 188,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "scrollToFeedback",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 173,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "shuffleAlternatives",
+                    "args": [
+                        {
+                            "name": "alternatives",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 163,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "alternatives",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "shuffleArray",
+                    "args": [
+                        {
+                            "name": "array",
+                            "type": "T[]",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "T[]",
+                    "typeParameters": [
+                        "T"
+                    ],
+                    "line": 149,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "array",
+                            "type": "T[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "startGame",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "RouterLink"
+                },
+                {
+                    "name": "QuizScoreComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "QuizQuestionComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "QuizAlternativesComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "QuizFeedbackComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "QuizActionsComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  Component,\n  OnInit,\n  inject,\n  ViewChild,\n  ElementRef,\n} from '@angular/core';\nimport { RouterLink } from '@angular/router';\nimport { Question } from '../../models/ferengi-rules.model';\nimport { FerengiRulesService } from '../../services/ferengi-rules.service';\n\nimport { QuizScoreComponent } from '../../components/quiz-score/quiz-score.component';\nimport { QuizQuestionComponent } from '../../components/quiz-question/quiz-question.component';\nimport { QuizAlternativesComponent } from '../../components/quiz-alternatives/quiz-alternatives.component';\nimport { QuizFeedbackComponent } from '../../components/quiz-feedback/quiz-feedback.component';\nimport { QuizActionsComponent } from '../../components/quiz-actions/quiz-actions.component';\n\n@Component({\n  selector: 'app-game-view',\n  standalone: true,\n  imports: [\n    RouterLink,\n    QuizScoreComponent,\n    QuizQuestionComponent,\n    QuizAlternativesComponent,\n    QuizFeedbackComponent,\n    QuizActionsComponent,\n  ],\n  templateUrl: './game-view.component.html',\n  styleUrls: ['./game-view.component.scss'],\n})\nexport class GameViewComponent implements OnInit {\n  @ViewChild('gameContent') private gameContentRef!: ElementRef<HTMLDivElement>;\n  private ferengiRulesService = inject(FerengiRulesService);\n\n  questions: Question[] = [];\n  currentQuestionIndex: number = 0;\n  currentQuestion: Question | null = null;\n  score: number = 0;\n  isGameOver: boolean = false;\n  feedbackText: string = '';\n  feedbackType: 'correct' | 'incorrect' | '' = '';\n  selectedAnswerLetter: string | null = null;\n  isAnswerVerified: boolean = false;\n  reactionImageUrl: string | null = null;\n  gamming = false;\n\n  ngOnInit(): void {\n    this.loadGameData();\n    this.startGame();\n  }\n\n  loadGameData(): void {\n    this.questions = this.ferengiRulesService.getQuestions();\n  }\n\n  startGame(): void {\n    this.currentQuestionIndex = 0;\n    this.score = 0;\n    this.isGameOver = false;\n    this.feedbackText = '';\n    this.feedbackType = '';\n    this.selectedAnswerLetter = null;\n    this.isAnswerVerified = false;\n    this.reactionImageUrl = null;\n    this.questions = this.shuffleArray(this.questions);\n    this.loadQuestion();\n  }\n\n  loadQuestion(): void {\n    this.selectedAnswerLetter = null;\n    this.isAnswerVerified = false;\n    this.feedbackText = '';\n    this.feedbackType = '';\n    this.reactionImageUrl = null;\n    this.gamming = this.currentQuestionIndex >= this.questions.length;\n\n    this.resetScroll();\n\n    if (this.currentQuestionIndex >= this.questions.length) {\n      this.reactionImageUrl = null;\n      this.endGame();\n      return;\n    }\n\n    this.currentQuestion = this.questions[this.currentQuestionIndex];\n    if (this.currentQuestion) {\n      this.currentQuestion.alternatives = this.shuffleAlternatives(\n        this.currentQuestion.alternatives\n      );\n    }\n  }\n  handleAnswerSelected(selectedLetter: string): void {\n    if (this.isAnswerVerified || this.isGameOver || !this.currentQuestion) {\n      return;\n    }\n\n    this.selectedAnswerLetter = selectedLetter;\n    this.isAnswerVerified = true;\n    const question = this.currentQuestion;\n\n    this.feedbackType = 'incorrect';\n    this.feedbackText = `Idiota! A resposta certa era a ${question.correctAnswerLetter}!`;\n    this.handleImageFeedback(false);\n\n    if (selectedLetter === question.correctAnswerLetter) {\n      this.score++;\n      this.feedbackType = 'correct';\n      const correctAnswerText =\n        question.alternatives.find((alt) => alt.letter === selectedLetter)\n          ?.text ?? '';\n      this.handleImageFeedback(true);\n      this.feedbackText = `Isso ! A resposta certa era a ${question.correctAnswerLetter}!\"`;\n    }\n\n    this.scrollToFeedback();\n  }\n\n  handleImageFeedback(right: boolean): void {\n    this.reactionImageUrl = right\n      ? 'assets/feedback/quark-happy.webp'\n      : 'assets/feedback/quark-angry.webp';\n  }\n\n  handleNextQuestion(): void {\n    if (!this.isGameOver) {\n      this.currentQuestionIndex++;\n      this.loadQuestion();\n    }\n  }\n\n  handlePlayAgain(): void {\n    this.startGame();\n  }\n\n  private endGame(): void {\n    this.isGameOver = true;\n    this.currentQuestion = null;\n    this.feedbackType = '';\n\n    this.feedbackText = this.ferengiRulesService.getFinalFeedbackMessage(\n      this.score\n    );\n    this.isAnswerVerified = false;\n\n    this.scrollToFeedback();\n  }\n\n  private shuffleArray<T>(array: T[]): T[] {\n    let currentIndex = array.length,\n      randomIndex;\n    while (currentIndex !== 0) {\n      randomIndex = Math.floor(Math.random() * currentIndex);\n      currentIndex--;\n      [array[currentIndex], array[randomIndex]] = [\n        array[randomIndex],\n        array[currentIndex],\n      ];\n    }\n    return array;\n  }\n\n  private shuffleAlternatives(alternatives: any): any {\n    const texts = alternatives.map((alt: { text: string }) => alt.text);\n    const shuffledTexts = this.shuffleArray([...texts]);\n\n    return alternatives.map((alt: any, index: any) => ({\n      ...alt,\n      text: shuffledTexts[index],\n    }));\n  }\n\n  private scrollToFeedback(): void {\n    setTimeout(() => {\n      try {\n        const element = this.gameContentRef?.nativeElement;\n        if (element) {\n          if (element.scrollHeight > element.clientHeight) {\n            element.scroll({ top: element.scrollHeight, behavior: 'smooth' });\n          }\n        }\n      } catch (err) {\n        console.error('Erro ao rolar para o feedback:', err);\n      }\n    }, 50);\n  }\n\n  private resetScroll(): void {\n    setTimeout(() => {\n      try {\n        const element = this.gameContentRef?.nativeElement;\n        if (element) {\n          element.scroll({ top: 0, behavior: 'auto' });\n        }\n      } catch (err) {\n        console.error('Erro ao resetar scroll:', err);\n      }\n    }, 0);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../../../styles/colors\" as colors;\n@use \"../../../../../styles/_breakpoints\" as bp;\n@use \"../../../../../styles/styles\" as styles;\n\n$mobile-actions-height: 70px;\n$mobile-container-padding: 1rem;\n$mobile-content-gap: 0.5rem;\n\n.game-view {\n  display: flex;\n  flex-direction: column;\n  height: 100vh;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 0 $mobile-container-padding $mobile-container-padding;\n  overflow: hidden;\n\n  &__header {\n    flex-shrink: 0;\n    width: 100%;\n    max-width: bp.$breakpoint-md;\n    padding: $mobile-container-padding 0 $mobile-container-padding 0;\n    text-align: center;\n    margin: 0 auto $mobile-content-gap;\n    border-bottom: 2px solid colors.$retro-border-dark;\n  }\n\n  &__nav {\n    width: 100%;\n    text-align: right;\n    margin-bottom: $mobile-content-gap * 0.5;\n    a {\n      @include styles.retro-button-styles;\n      padding: 0.4rem 1rem !important;\n      font-size: 0.8rem !important;\n    }\n  }\n\n  &__title {\n    font-size: 1.8rem;\n    line-height: 1.2;\n    margin-bottom: 0.25rem;\n    font-weight: 700;\n    color: colors.$retro-text;\n  }\n\n  &__subtitle {\n    font-size: 1.1rem;\n    line-height: 1.3;\n    font-family: \"Inter\", sans-serif;\n    font-weight: 500;\n    margin: 0;\n    color: colors.$retro-text-secondary;\n  }\n\n  &__content {\n    width: 100%;\n    max-width: bp.$breakpoint-md;\n    margin: 0 auto;\n    padding: $mobile-content-gap 0;\n    display: flex;\n    flex-direction: column;\n    gap: $mobile-content-gap * 2.5;\n    overflow-y: auto;\n    -webkit-overflow-scrolling: touch;\n\n    &::-webkit-scrollbar {\n      width: 8px;\n    }\n    &::-webkit-scrollbar-track {\n      background: rgba(colors.$retro-border, 0.5);\n      border-radius: 4px;\n    }\n    &::-webkit-scrollbar-thumb {\n      background-color: colors.$latinum-gold;\n      border-radius: 4px;\n      border: 1px solid colors.$retro-border-dark;\n    }\n    &::-webkit-scrollbar-thumb:hover {\n      background-color: colors.$latinum-gold-dark;\n    }\n    scrollbar-width: thin;\n    scrollbar-color: colors.$latinum-gold rgba(colors.$retro-border, 0.5);\n  }\n\n  &__question-area,\n  &__alternatives-area {\n    width: 100%;\n    flex-shrink: 0;\n  }\n\n  app-quiz-feedback {\n    margin-top: auto;\n    flex-shrink: 0;\n    width: 100%;\n  }\n\n  app-quiz-actions {\n    flex-shrink: 0;\n    width: 100%;\n    max-width: bp.$breakpoint-md;\n    margin: $mobile-content-gap auto 0;\n    z-index: 10;\n    position: sticky;\n    bottom: 0;\n    padding: 0.5rem 0;\n    background: linear-gradient(\n      to top,\n      colors.$retro-bg 85%,\n      rgba(colors.$retro-bg, 0)\n    );\n  }\n\n  @media (min-width: bp.$breakpoint-sm) {\n    $desktop-container-padding: 2rem;\n    $desktop-content-gap: 0.5rem;\n    padding: 0 $desktop-container-padding $desktop-container-padding;\n    height: 100vh;\n\n    &__header,\n    &__content,\n    app-quiz-actions {\n      max-width: bp.$breakpoint-md;\n    }\n\n    &__header {\n      padding-top: $desktop-container-padding;\n      margin-bottom: $desktop-content-gap;\n    }\n\n    &__nav a {\n      padding: 0.6rem 1.5rem !important;\n      font-size: 1rem !important;\n    }\n\n    &__title {\n      font-size: 2.5rem;\n    }\n    &__subtitle {\n      font-size: 1.25rem;\n    }\n\n    &__content {\n      gap: $desktop-content-gap;\n      padding: 2rem;\n      background-color: colors.$latinum-gold;\n      color: colors.$retro-text;\n      border: 2px solid colors.$retro-border-dark;\n      box-shadow: 4px 4px 0px 0px colors.$retro-border-dark;\n      border-radius: 4px;\n      margin-bottom: $desktop-content-gap;\n    }\n\n    app-quiz-feedback {\n      margin-top: $desktop-content-gap;\n    }\n\n    app-quiz-actions {\n      position: static;\n      background: none;\n      padding: 0;\n      margin-top: auto;\n      width: 100%;\n      max-width: bp.$breakpoint-md;\n    }\n  }\n\n  @media (min-width: bp.$breakpoint-lg) {\n    &__header,\n    &__content,\n    app-quiz-actions {\n      max-width: bp.$breakpoint-lg;\n    }\n  }\n}\n",
+                    "styleUrl": "./game-view.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"game-view\">\n  <div class=\"game-view__header\">\n    <div class=\"game-view__nav\">\n      <a routerLink=\"/regras\">Ver a Lista de Leis</a>\n    </div>\n    <h1 class=\"game-view__title\">Leis de Aquisição Ferengi</h1>\n    <h3 class=\"game-view__subtitle\">Prova para cidadania Ferengi</h3>\n  </div>\n\n  <div class=\"game-view__content\" #gameContent>\n    @if (!isGameOver) {\n    <app-quiz-score [score]=\"score\" />\n    } @if (currentQuestion && !isGameOver) {\n    <div class=\"game-view__question-area\">\n      <app-quiz-question [questionText]=\"currentQuestion.questionText\" />\n    </div>\n\n    <div class=\"game-view__alternatives-area\">\n      <app-quiz-alternatives\n        [alternatives]=\"currentQuestion.alternatives\"\n        [selectedLetter]=\"selectedAnswerLetter\"\n        [correctAnswerLetter]=\"currentQuestion.correctAnswerLetter\"\n        [isDisabled]=\"isAnswerVerified\"\n        [isVerified]=\"isAnswerVerified\"\n        (answerSelected)=\"handleAnswerSelected($event)\"\n      />\n    </div>\n    }\n    <app-quiz-feedback\n      [text]=\"feedbackText\"\n      [type]=\"feedbackType\"\n      [image]=\"reactionImageUrl\"\n      [endGame]=\"gamming\"\n    />\n  </div>\n\n  <app-quiz-actions\n    [showNextButton]=\"isAnswerVerified && !isGameOver\"\n    [showPlayAgainButton]=\"isGameOver\"\n    (next)=\"handleNextQuestion()\"\n    (playAgain)=\"handlePlayAgain()\"\n  />\n</div>\n"
+        },
+        {
+            "name": "IntroViewComponent",
+            "id": "component-IntroViewComponent-1961561c67592e6bc70b6bb357471cb8631b2f157cc43a8a2b63a4c2cef99db00f2b5fe5674c915feaa993aeb3c4006bd0e13a5922664db3a2de36e0fc17ff93",
+            "file": "src/app/features/intro/intro-view.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-intro-view",
+            "styleUrls": [
+                "./intro-view.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./intro-view.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "buttonText",
+                    "defaultValue": "'Próximo...'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "currentSlide",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IntroSlide | null",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 45
+                },
+                {
+                    "name": "currentSlideIndex",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                },
+                {
+                    "name": "router",
+                    "defaultValue": "inject(Router)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "slides",
+                    "defaultValue": "[\n    {\n      imageUrl: '../../../assets/intro/tower-commerce.webp',\n      altText: 'Vista da Torre do Comércio em Ferenginar',\n      text: 'Bem-vindo(a), aspirante a negociador(a), à magnífica Ferenginar, coração pulsante do comércio e epicentro do lucro universal!',\n    },\n    {\n      imageUrl: '../../../assets/intro/latinum.webp',\n      altText: 'Barras de Latinum Prensado a Ouro',\n      text: 'Você almeja a cidadania? O respeito? O acesso irrestrito às oportunidades mais lucrativas da galáxia? Excelente! Mas a cidadania Ferengi não é dada... é conquistada.',\n    },\n    {\n      imageUrl: '../../../assets/intro/ferengi-rules.webp',\n      altText: 'Pergaminho antigo com as Leis de Aquisição',\n      text: 'O caminho para o sucesso é pavimentado com conhecimento. As sagradas Leis de Aquisição são a base de nossa sociedade. Dominá-las é o primeiro passo para encher seus cofres.',\n    },\n    {\n      imageUrl: '../../../assets/intro/ferengi-with-latinum.webp',\n      altText: 'Ferengi com barras de latinum',\n      text: 'Sua aptidão para o lucro será testada! Prepare-se para o Exame Oficial de Cidadania Ferengi. Suas respostas determinarão seu futuro... e sua linha de crédito.',\n    },\n    {\n      imageUrl: '../../../assets/intro/quark.webp',\n      altText: 'Rosto do quark (ferengi)',\n      text: 'Prove que você possui os lóbulos para o negócio! Demonstre seu domínio das Leis e junte-se à elite lucrativa. Que seus negócios prosperem!',\n    },\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "IntroSlide[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "modifierKind": [
+                        148
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "loadSlide",
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 51,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "navigateToGame",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 73,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "nextSlide",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 63,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "RouterLink"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnChanges, OnInit, inject } from '@angular/core';\nimport { Router, RouterLink } from '@angular/router';\nimport { IntroSlide } from './models/intro.model';\n\n@Component({\n  selector: 'app-intro-view',\n  standalone: true,\n  imports: [RouterLink],\n  templateUrl: './intro-view.component.html',\n  styleUrls: ['./intro-view.component.scss'],\n})\nexport class IntroViewComponent {\n  private router = inject(Router);\n  buttonText = 'Próximo...';\n\n  readonly slides: IntroSlide[] = [\n    {\n      imageUrl: '../../../assets/intro/tower-commerce.webp',\n      altText: 'Vista da Torre do Comércio em Ferenginar',\n      text: 'Bem-vindo(a), aspirante a negociador(a), à magnífica Ferenginar, coração pulsante do comércio e epicentro do lucro universal!',\n    },\n    {\n      imageUrl: '../../../assets/intro/latinum.webp',\n      altText: 'Barras de Latinum Prensado a Ouro',\n      text: 'Você almeja a cidadania? O respeito? O acesso irrestrito às oportunidades mais lucrativas da galáxia? Excelente! Mas a cidadania Ferengi não é dada... é conquistada.',\n    },\n    {\n      imageUrl: '../../../assets/intro/ferengi-rules.webp',\n      altText: 'Pergaminho antigo com as Leis de Aquisição',\n      text: 'O caminho para o sucesso é pavimentado com conhecimento. As sagradas Leis de Aquisição são a base de nossa sociedade. Dominá-las é o primeiro passo para encher seus cofres.',\n    },\n    {\n      imageUrl: '../../../assets/intro/ferengi-with-latinum.webp',\n      altText: 'Ferengi com barras de latinum',\n      text: 'Sua aptidão para o lucro será testada! Prepare-se para o Exame Oficial de Cidadania Ferengi. Suas respostas determinarão seu futuro... e sua linha de crédito.',\n    },\n    {\n      imageUrl: '../../../assets/intro/quark.webp',\n      altText: 'Rosto do quark (ferengi)',\n      text: 'Prove que você possui os lóbulos para o negócio! Demonstre seu domínio das Leis e junte-se à elite lucrativa. Que seus negócios prosperem!',\n    },\n  ];\n\n  currentSlideIndex: number = 0;\n  currentSlide: IntroSlide | null = null;\n\n  constructor() {\n    this.loadSlide(this.currentSlideIndex);\n  }\n\n  private loadSlide(index: number): void {\n    if (index < 0 || index >= this.slides.length) {\n      this.navigateToGame();\n      return;\n    }\n\n    this.currentSlide = this.slides[index];\n\n    this.buttonText =\n      index === this.slides.length - 1 ? 'Vamos começar !' : 'Próximo...';\n  }\n\n  nextSlide(): void {\n    this.currentSlideIndex++;\n    if (this.currentSlideIndex >= this.slides.length) {\n      this.navigateToGame();\n      return;\n    }\n\n    this.loadSlide(this.currentSlideIndex);\n  }\n\n  private navigateToGame(): void {\n    this.router.navigate(['/jogo']);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../styles/colors\" as colors;\n@use \"../../../styles/breakpoints\" as bp;\n@use \"../../../styles/styles\" as styles;\n\n.intro-view {\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 1rem;\n  position: relative;\n  background-color: colors.$retro-bg;\n\n  &__skip-button {\n    @include styles.retro-button-styles;\n    position: absolute;\n    top: 1rem;\n    right: 1rem;\n    padding: 0.5rem 1rem !important;\n    font-size: 0.75rem !important;\n    z-index: 10;\n  }\n\n  &__container {\n    background-color: colors.$latinum-gold;\n    color: colors.$retro-text;\n    border: 2px solid colors.$retro-border-dark;\n    box-shadow: 3px 3px 0px 0px colors.$retro-border-dark;\n\n    padding: 0.6rem 1.5rem;\n    width: 100%;\n    max-width: 820px;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n  }\n\n  &__image-area {\n    background-color: colors.$retro-bg;\n    border: 2px solid colors.$retro-border-dark;\n    margin-bottom: 1.5rem;\n    width: 100%;\n    max-width: 600px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    overflow: hidden;\n    border-radius: 4px;\n    padding: 0.5rem;\n    aspect-ratio: 16 / 9;\n  }\n\n  &__image {\n    display: block;\n    max-width: 100%;\n    max-height: 100%;\n    object-fit: contain;\n    border-radius: 2px;\n  }\n\n  &__image-placeholder {\n    color: colors.$retro-text-secondary;\n    font-size: 0.9rem;\n  }\n\n  &__text-area {\n    margin-bottom: 1.5rem;\n    width: 100%;\n  }\n\n  &__text {\n    color: colors.$retro-text;\n    font-size: 1.1rem;\n    line-height: 1.6;\n    margin: 0;\n    white-space: pre-wrap;\n    font-weight: 500;\n  }\n\n  &__next-prompt {\n    @include styles.retro-button-styles;\n    padding: 0.8rem 2rem !important;\n    font-size: 1.1rem !important;\n    margin-top: auto;\n  }\n\n  &__loading {\n    color: colors.$retro-text;\n    font-size: 1.2rem;\n    font-family: \"Oswald\", sans-serif;\n  }\n\n  @media (max-width: #{bp.$breakpoint-sm - 1px}) {\n    padding: 0.75rem;\n\n    &__container {\n      padding: 1rem;\n      box-shadow: 3px 3px 0px 0px colors.$retro-border-dark;\n    }\n\n    &__image-area {\n      margin-bottom: 1rem;\n      aspect-ratio: 4 / 3;\n    }\n\n    &__text-area {\n      margin-bottom: 1rem;\n    }\n\n    &__text {\n      font-size: 1rem;\n    }\n\n    &__next-prompt {\n      padding: 0.7rem 1.5rem !important;\n      font-size: 1rem !important;\n    }\n  }\n}\n",
+                    "styleUrl": "./intro-view.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 45
+            },
+            "extends": [],
+            "templateData": "<div class=\"intro-view\">\n  <button routerLink=\"/jogo\" class=\"intro-view__skip-button\">\n    Pular Introdução &gt;&gt;\n  </button>\n\n  @if (currentSlide) {\n  <div class=\"intro-view__container\">\n    <div class=\"intro-view__image-area\">\n      <img\n        [src]=\"currentSlide.imageUrl\"\n        [alt]=\"currentSlide.altText\"\n        class=\"intro-view__image\"\n        loading=\"lazy\"\n      />\n      @if(!currentSlide.imageUrl){\n      <div class=\"intro-view__image-placeholder\">Imagem Indisponível</div>\n      }\n    </div>\n\n    <div class=\"intro-view__text-area\">\n      <p class=\"intro-view__text\">\n        {{ currentSlide.text }}\n      </p>\n    </div>\n\n    <div class=\"intro-view__next-prompt\" (click)=\"nextSlide()\">\n      {{ buttonText }} &#x25BC;\n    </div>\n  </div>\n  } @else {\n  <div class=\"intro-view__loading\">Carregando Introdução...</div>\n  }\n</div>\n"
+        },
+        {
+            "name": "QuizActionsComponent",
+            "id": "component-QuizActionsComponent-f01e11b39e1bfeacd74f9b24d3cf13e066758ba20075876c0f981cc18dc8a68d999bed06f9907c0266c8a6270b6dd707a7aeab5c6642d416d78163ad590a5fca",
+            "file": "src/app/features/ferengi-rules/components/quiz-actions/quiz-actions.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-quiz-actions",
+            "styleUrls": [
+                "./quiz-actions.component.scss"
+            ],
+            "styles": [],
+            "template": "<div class=\"quiz-actions\">\n  <app-button\n    *ngIf=\"showNextButton || showPlayAgainButton\"\n    [text]=\"currentButtonText\"\n    (callEvent)=\"handleAction()\"\n  />\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "showNextButton",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "showPlayAgainButton",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "next",
+                    "defaultValue": "new EventEmitter<void>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "playAgain",
+                    "defaultValue": "new EventEmitter<void>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "handleAction",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 36,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { ButtonComponent } from '../../../../shared/button/button/button.component';\nimport { CommonModule } from '@angular/common';\n\n@Component({\n  selector: 'app-quiz-actions',\n  imports: [ButtonComponent, CommonModule],\n  template: `\n    <div class=\"quiz-actions\">\n      <app-button\n        *ngIf=\"showNextButton || showPlayAgainButton\"\n        [text]=\"currentButtonText\"\n        (callEvent)=\"handleAction()\"\n      />\n    </div>\n  `,\n  styleUrls: ['./quiz-actions.component.scss'],\n})\nexport class QuizActionsComponent {\n  @Input() showNextButton: boolean = false;\n  @Input() showPlayAgainButton: boolean = false;\n\n  @Output() next = new EventEmitter<void>();\n  @Output() playAgain = new EventEmitter<void>();\n\n  get currentButtonText(): string {\n    if (this.showPlayAgainButton) {\n      return 'Jogar Novamente';\n    }\n    if (this.showNextButton) {\n      return 'Próxima Pergunta >>';\n    }\n    return '';\n  }\n\n  handleAction(): void {\n    if (this.showPlayAgainButton) {\n      this.playAgain.emit();\n      return;\n    }\n\n    if (this.showNextButton) {\n      this.next.emit();\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../../../styles/colors\" as colors;\n@use \"../../../../../styles/_breakpoints\" as bp;\n@use \"../../../../../styles/styles\" as styles;\n.quiz-actions {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-wrap: wrap;\n  gap: 1rem;\n  width: 100%;\n  margin-top: 1.5rem;\n}\n\n@media (min-width: bp.$breakpoint-sm) {\n  .quiz-actions {\n    justify-content: flex-end;\n    margin-top: 0;\n  }\n}\n",
+                    "styleUrl": "./quiz-actions.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "accessors": {
+                "currentButtonText": {
+                    "name": "currentButtonText",
+                    "getSignature": {
+                        "name": "currentButtonText",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 26
+                    }
+                }
+            }
+        },
+        {
+            "name": "QuizAlternativesComponent",
+            "id": "component-QuizAlternativesComponent-15ec4ca73f8642e0ce9889441bf634f01482f95ba869c47dfe00dff476d0c9baa63f61fff6e8249ef9023f32072762605920de5d41fbc28287f3ab87d82017c9",
+            "file": "src/app/features/ferengi-rules/components/quiz-alternatives/quiz-alternatives.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-quiz-alternatives",
+            "styleUrls": [
+                "./quiz-alternatives.component.scss"
+            ],
+            "styles": [],
+            "template": "<div class=\"quiz-alternatives\">\n  @for (alt of alternatives; track alt.letter) {\n  <button\n    class=\"quiz-alternatives__item\"\n    (click)=\"selectAnswer(alt.letter)\"\n    [disabled]=\"isDisabled\"\n    [ngClass]=\"{\n      'quiz-alternatives__item--correct':\n        isVerified && alt.letter === correctAnswerLetter,\n      'quiz-alternatives__item--incorrect':\n        isVerified &&\n        selectedLetter === alt.letter &&\n        alt.letter !== correctAnswerLetter,\n      'quiz-alternatives__item--disabled':\n        isDisabled &&\n        !(\n          isVerified &&\n          (alt.letter === correctAnswerLetter ||\n            selectedLetter === alt.letter)\n        )\n    }\"\n  >\n    {{ alt.letter }}) {{ alt.text }}\n  </button>\n  } @empty {\n  <p class=\"quiz-alternatives__empty\">Carregando alternativas...</p>\n  }\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "alternatives",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 41,
+                    "type": "Alternative[]",
+                    "decorators": []
+                },
+                {
+                    "name": "correctAnswerLetter",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 43,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "isDisabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 44,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "isVerified",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 45,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "selectedLetter",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 42,
+                    "type": "string | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "answerSelected",
+                    "defaultValue": "new EventEmitter<string>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 47,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "selectAnswer",
+                    "args": [
+                        {
+                            "name": "letter",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 49,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "letter",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "NgClass"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { NgClass } from '@angular/common';\nimport { Alternative } from '../../models/ferengi-rules.model';\n\n@Component({\n  selector: 'app-quiz-alternatives',\n  imports: [NgClass],\n  template: `\n    <div class=\"quiz-alternatives\">\n      @for (alt of alternatives; track alt.letter) {\n      <button\n        class=\"quiz-alternatives__item\"\n        (click)=\"selectAnswer(alt.letter)\"\n        [disabled]=\"isDisabled\"\n        [ngClass]=\"{\n          'quiz-alternatives__item--correct':\n            isVerified && alt.letter === correctAnswerLetter,\n          'quiz-alternatives__item--incorrect':\n            isVerified &&\n            selectedLetter === alt.letter &&\n            alt.letter !== correctAnswerLetter,\n          'quiz-alternatives__item--disabled':\n            isDisabled &&\n            !(\n              isVerified &&\n              (alt.letter === correctAnswerLetter ||\n                selectedLetter === alt.letter)\n            )\n        }\"\n      >\n        {{ alt.letter }}) {{ alt.text }}\n      </button>\n      } @empty {\n      <p class=\"quiz-alternatives__empty\">Carregando alternativas...</p>\n      }\n    </div>\n  `,\n  styleUrls: ['./quiz-alternatives.component.scss'],\n})\nexport class QuizAlternativesComponent {\n  @Input({ required: true }) alternatives: Alternative[] = [];\n  @Input() selectedLetter: string | null = null;\n  @Input() correctAnswerLetter: string | null = null;\n  @Input() isDisabled: boolean = false;\n  @Input() isVerified: boolean = false;\n\n  @Output() answerSelected = new EventEmitter<string>();\n\n  selectAnswer(letter: string): void {\n    if (!this.isDisabled) {\n      this.answerSelected.emit(letter);\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../../../styles/colors\" as colors;\n@use \"../../../../../styles/_breakpoints\" as bp;\n@use \"sass:color\";\n\n.quiz-alternatives {\n  display: flex;\n  flex-direction: column;\n  gap: 0.75rem;\n  width: 100%;\n\n  &__item {\n    font-family: \"Inter\", sans-serif;\n    font-size: 1rem;\n    padding: 0.9rem 1.2rem;\n    font-weight: 500;\n    border-radius: 4px;\n    cursor: pointer;\n    transition: all 0.15s ease-out;\n    text-align: left;\n    background-color: colors.$white;\n    color: colors.$retro-text;\n    border: 2px solid colors.$retro-border-dark;\n    box-shadow: 3px 3px 0px 0px colors.$retro-border-dark;\n    width: 100%;\n    line-height: 1.5;\n\n    &:hover:not(:disabled) {\n      background-color: rgba(colors.$latinum-gold, 0.15);\n      border-color: colors.$retro-border-dark;\n      transform: translate(-2px, -2px);\n      box-shadow: 5px 5px 0px 0px colors.$retro-border-dark;\n    }\n\n    &:active:not(:disabled) {\n      transform: translate(1px, 1px);\n      box-shadow: 1px 1px 0px 0px colors.$retro-border-dark;\n    }\n\n    &:disabled {\n      cursor: not-allowed;\n    }\n\n    &--correct {\n      background-color: colors.$retro-success-bg;\n      border-color: colors.$retro-success;\n      color: colors.$retro-success;\n      font-weight: 600;\n      cursor: default;\n      box-shadow: none;\n      transform: none !important;\n      opacity: 1 !important;\n    }\n\n    &--incorrect {\n      background-color: colors.$retro-error-bg;\n      border-color: colors.$retro-error;\n      color: colors.$retro-error;\n      font-weight: 600;\n      cursor: default;\n      box-shadow: none;\n      transform: none !important;\n      opacity: 1 !important;\n    }\n\n    &--disabled {\n      opacity: 0.6;\n      background-color: #f0f0f0;\n      color: colors.$retro-text-secondary;\n      border-color: colors.$retro-border;\n      box-shadow: none;\n      cursor: default;\n      &:hover {\n        transform: none;\n        box-shadow: none;\n        background-color: #f0f0f0;\n      }\n    }\n  }\n\n  &__empty {\n    color: colors.$retro-text-secondary;\n    text-align: center;\n    padding: 1rem;\n    font-size: 1rem;\n    font-style: italic;\n  }\n}\n\n@media (min-width: bp.$breakpoint-sm) {\n  .quiz-alternatives {\n    gap: 1rem;\n    &__item {\n      font-size: 1.1rem;\n      padding: 1rem 1.5rem;\n    }\n  }\n}\n",
+                    "styleUrl": "./quiz-alternatives.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "QuizFeedbackComponent",
+            "id": "component-QuizFeedbackComponent-923e25f7dbadd1b6388cfe880fce006564eae2a5240b4970bf15e16669b9963f469a5587fc4467875bc9b89201bedfe974a328074ab549713d22796e0d9d3e95",
+            "file": "src/app/features/ferengi-rules/components/quiz-feedback/quiz-feedback.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-quiz-feedback",
+            "styleUrls": [
+                "./quiz-feedback.component.scss"
+            ],
+            "styles": [],
+            "template": "@if (text) {\n<div class=\"quiz-feedback\" [ngClass]=\"modifierClass\">\n  @if(image && !finalImage){\n  <div class=\"quiz-feedback__reaction\">\n    <img\n      [src]=\"image\"\n      alt=\"Reação do Quark\"\n      class=\"quiz-feedback__reaction-image\"\n      loading=\"lazy\"\n    />\n  </div>\n  <span class=\"quiz-feedback__text\">{{ text }}</span>\n  } @if(finalImage){\n  <div class=\"quiz-feedback__final\">\n    <img\n      [src]=\"finalImage\"\n      alt=\"Quark olhando para você\"\n      class=\"quiz-feedback__final-image\"\n      loading=\"lazy\"\n    />\n    <p class=\"quiz-feedback__final-text\">{{ text }}</p>\n  </div>\n  }\n</div>\n}\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "endGame",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 48,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "image",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 47,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "text",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 45,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 46,
+                    "type": "\"correct\" | \"incorrect\" | string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "cdr",
+                    "defaultValue": "inject(ChangeDetectorRef)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 44
+                },
+                {
+                    "name": "finalImage",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 49
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnChanges",
+                    "args": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "changes",
+                            "type": "SimpleChanges",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "NgClass"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectorRef,\n  Component,\n  inject,\n  Input,\n  OnChanges,\n  SimpleChanges,\n} from '@angular/core';\nimport { NgClass } from '@angular/common';\n\n@Component({\n  selector: 'app-quiz-feedback',\n  imports: [NgClass],\n  template: `\n    @if (text) {\n    <div class=\"quiz-feedback\" [ngClass]=\"modifierClass\">\n      @if(image && !finalImage){\n      <div class=\"quiz-feedback__reaction\">\n        <img\n          [src]=\"image\"\n          alt=\"Reação do Quark\"\n          class=\"quiz-feedback__reaction-image\"\n          loading=\"lazy\"\n        />\n      </div>\n      <span class=\"quiz-feedback__text\">{{ text }}</span>\n      } @if(finalImage){\n      <div class=\"quiz-feedback__final\">\n        <img\n          [src]=\"finalImage\"\n          alt=\"Quark olhando para você\"\n          class=\"quiz-feedback__final-image\"\n          loading=\"lazy\"\n        />\n        <p class=\"quiz-feedback__final-text\">{{ text }}</p>\n      </div>\n      }\n    </div>\n    }\n  `,\n  styleUrls: ['./quiz-feedback.component.scss'],\n})\nexport class QuizFeedbackComponent implements OnChanges {\n  cdr = inject(ChangeDetectorRef);\n  @Input() text: string = '';\n  @Input() type: 'correct' | 'incorrect' | '' = '';\n  @Input() image: string | null = null;\n  @Input() endGame = false;\n  finalImage: string | null = null;\n\n  get modifierClass(): string {\n    if (this.type === 'correct') return 'quiz-feedback--correct';\n    if (this.type === 'incorrect') return 'quiz-feedback--incorrect';\n    return '';\n  }\n\n  ngOnChanges(changes: SimpleChanges): void {\n    if (changes['endGame'] && this.endGame) {\n      this.finalImage = 'assets/feedback/quark-final.webp';\n    }\n\n    if (!this.endGame) {\n      this.finalImage = null;\n    }\n    this.cdr.detectChanges();\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../../../styles/colors\" as colors;\n@use \"../../../../../styles/_breakpoints\" as bp;\n\n.quiz-feedback {\n  padding: 1rem;\n  border-radius: 4px;\n  font-weight: 500;\n  border: 2px solid transparent;\n  color: colors.$retro-text;\n  background-color: transparent;\n  width: 100%;\n  box-sizing: border-box;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 1rem;\n  transition: all 0.3s ease;\n  min-height: 70px;\n\n  &--correct,\n  &--incorrect {\n    background-color: colors.$white;\n    box-shadow: 4px 4px 0px 0px colors.$retro-border-dark;\n    border-color: colors.$retro-border-dark;\n  }\n\n  &--correct {\n    border-left: 6px solid colors.$retro-success;\n    color: colors.$retro-success;\n  }\n\n  &--incorrect {\n    border-left: 6px solid colors.$retro-error;\n    color: colors.$retro-error;\n  }\n\n  &__reaction {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    animation: fade-in 0.4s ease-in-out;\n    flex-shrink: 0;\n  }\n\n  &__reaction-image {\n    width: 60px;\n    height: 60px;\n    border-radius: 50%;\n    border: 2px solid colors.$retro-border-dark;\n    object-fit: cover;\n    display: block;\n    background-color: colors.$retro-bg;\n  }\n\n  &__text {\n    text-align: left;\n    flex-grow: 1;\n    font-size: 1.1rem;\n    line-height: 1.5;\n    font-weight: 600;\n  }\n\n  &__final {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    text-align: center;\n    gap: 1.5rem;\n    animation: fade-in 0.5s ease-in-out;\n    margin-top: 1rem;\n  }\n\n  &__final-image {\n    max-width: 100%;\n    max-height: 300px;\n    border-radius: 4px;\n    border: 2px solid colors.$retro-border-dark;\n    display: block;\n    background-color: colors.$retro-bg;\n  }\n  &__final-text {\n    font-size: 1.2rem;\n    line-height: 1.6;\n    color: colors.$retro-text;\n    font-weight: 500;\n    max-width: 60ch;\n  }\n\n  @keyframes fade-in {\n    from {\n      opacity: 0;\n      transform: translateY(5px);\n    }\n    to {\n      opacity: 1;\n      transform: translateY(0);\n    }\n  }\n}\n\n@media (min-width: bp.$breakpoint-sm) {\n  .quiz-feedback {\n    padding: 1.25rem 1.5rem;\n    min-height: 80px;\n    gap: 1.5rem;\n\n    &__reaction-image {\n      width: 70px;\n      height: 70px;\n    }\n\n    &__text {\n      font-size: 1.2rem;\n    }\n\n    &__final-image {\n      max-height: 350px;\n    }\n    &__final-text {\n      font-size: 1.3rem;\n    }\n  }\n}\n",
+                    "styleUrl": "./quiz-feedback.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnChanges"
+            ],
+            "accessors": {
+                "modifierClass": {
+                    "name": "modifierClass",
+                    "getSignature": {
+                        "name": "modifierClass",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 51
+                    }
+                }
+            }
+        },
+        {
+            "name": "QuizQuestionComponent",
+            "id": "component-QuizQuestionComponent-1e4bd58a7340c8c8d85905dda8869442fd4149855948101254754d9cd984290304c51d65194dfaf7da2fd1cdd2289655edd80ff7b69c63a0fcbea59dfdf51829",
+            "file": "src/app/features/ferengi-rules/components/quiz-question/quiz-question.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-quiz-question",
+            "styleUrls": [
+                "./quiz-question.component.scss"
+            ],
+            "styles": [],
+            "template": "<div class=\"quiz-question\">\n  <p class=\"quiz-question__text\">{{ questionText }}</p>\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "questionText",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 15,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-quiz-question',\n  standalone: true,\n  imports: [],\n  template: `\n    <div class=\"quiz-question\">\n      <p class=\"quiz-question__text\">{{ questionText }}</p>\n    </div>\n  `,\n  styleUrls: ['./quiz-question.component.scss'],\n})\nexport class QuizQuestionComponent {\n  @Input({ required: true }) questionText: string = '';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../../../styles/colors\" as colors;\n@use \"../../../../../styles/breakpoints\" as bp;\n\n.quiz-question {\n  width: 100%;\n  flex-shrink: 0;\n\n  &__text {\n    font-size: 1.3rem;\n    line-height: 1.6;\n    color: colors.$retro-text;\n    text-align: center;\n    font-weight: 500;\n  }\n}\n\n@media (min-width: bp.$breakpoint-sm) {\n  .quiz-question__text {\n    font-size: 1.5rem;\n    line-height: 1.7;\n  }\n}\n\n@media (min-width: bp.$breakpoint-md) {\n  .quiz-question__text {\n    font-size: 1.6rem;\n  }\n}\n",
+                    "styleUrl": "./quiz-question.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "QuizScoreComponent",
+            "id": "component-QuizScoreComponent-1dec101d11385ae266a40359c6c51fe936bef5be96a7d754b6364893457412c3d9c7670c9d603ad143d78771e6079431ce5001e0ae5e828c13c11e7b2c48a9db",
+            "file": "src/app/features/ferengi-rules/components/quiz-score/quiz-score.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-quiz-score",
+            "styleUrls": [
+                "./quiz-score.component.scss"
+            ],
+            "styles": [],
+            "template": "<div class=\"quiz-score\">\n  Lucro : <span class=\"quiz-score__value\">{{ score }}</span> Latinum\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "required": true,
+                    "name": "score",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "optional": false,
+                    "line": 14,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-quiz-score',\n  imports: [],\n  template: `\n    <div class=\"quiz-score\">\n      Lucro : <span class=\"quiz-score__value\">{{ score }}</span> Latinum\n    </div>\n  `,\n  styleUrls: ['./quiz-score.component.scss'],\n})\nexport class QuizScoreComponent {\n  @Input({ required: true }) score: number = 0;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../../../styles/colors\" as colors;\n@use \"../../../../../styles/_breakpoints\" as bp;\n\n.quiz-score {\n  display: flex;\n  align-items: baseline;\n  justify-content: center;\n  gap: 0.6em;\n  padding: 0.5rem 0;\n  width: 100%;\n  flex-shrink: 0;\n  text-align: center;\n\n  &__label {\n    font-family: \"Oswald\", sans-serif;\n    font-size: 0.9rem;\n    font-weight: 500;\n    color: colors.$retro-text-secondary;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n  }\n\n  &__value {\n    font-family: \"Oswald\", sans-serif;\n    font-size: 2.8rem;\n    font-weight: 700;\n    color: colors.$retro-text;\n    line-height: 1;\n    margin: 0 0.1em;\n    text-shadow: 3px 1px 0px colors.$white;\n  }\n\n  &__unit {\n    font-family: \"Oswald\", sans-serif;\n    font-size: 0.9rem;\n    font-weight: 500;\n    color: colors.$latinum-gold-dark;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n  }\n}\n\n@media (min-width: bp.$breakpoint-sm) {\n  .quiz-score {\n    gap: 0.8em;\n    padding: 0.75rem 0;\n\n    &__label,\n    &__unit {\n      font-size: 1rem;\n    }\n\n    &__value {\n      font-size: 3.5rem;\n    }\n  }\n}\n",
+                    "styleUrl": "./quiz-score.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "RuleListComponent",
+            "id": "component-RuleListComponent-0d42da8a8d9b19802c8e3924a9d71c12a7270072e3617ee96697636165650387e96182971ccc09aa5bbacf7a5b9f6ca2d6780639da47fd8a2316e0fd738c5f0f",
+            "file": "src/app/features/ferengi-rules/views/rule-list/rule-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-rules-list-view",
+            "styleUrls": [
+                "./rule-list.component.scss"
+            ],
+            "styles": [],
+            "template": "<div class=\"rules-list\">\n  <div class=\"rules-list__nav\">\n    <a routerLink=\"/jogo\">Ir para o Prova</a>\n  </div>\n\n  <h1 class=\"rules-list__title\">\n    Lista Completa: Leis de Aquisição Ferengi\n  </h1>\n  <div class=\"rules-list__content\">\n    <ul class=\"rules-list__list\">\n      @for (rule of rules; let i = $index; track i) {\n      <li class=\"rules-list__item\">\n        <strong>{{ rule.number }}ª Lei:</strong> {{ rule.text }}\n      </li>\n      } @empty {\n      <li class=\"rules-list__empty-message\">\n        Nenhuma lei encontrada. Carregando...\n      </li>\n      }\n    </ul>\n  </div>\n</div>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "ferengiRulesService",
+                    "defaultValue": "inject(FerengiRulesService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 36,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "rules",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Rule[]",
+                    "indexKey": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 40,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [
+                {
+                    "name": "RouterLink"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, inject } from '@angular/core';\nimport { RouterLink } from '@angular/router';\nimport { Rule } from '../../models/ferengi-rules.model';\nimport { FerengiRulesService } from '../../services/ferengi-rules.service';\n\n@Component({\n  selector: 'app-rules-list-view',\n  imports: [RouterLink],\n  template: `\n    <div class=\"rules-list\">\n      <div class=\"rules-list__nav\">\n        <a routerLink=\"/jogo\">Ir para o Prova</a>\n      </div>\n\n      <h1 class=\"rules-list__title\">\n        Lista Completa: Leis de Aquisição Ferengi\n      </h1>\n      <div class=\"rules-list__content\">\n        <ul class=\"rules-list__list\">\n          @for (rule of rules; let i = $index; track i) {\n          <li class=\"rules-list__item\">\n            <strong>{{ rule.number }}ª Lei:</strong> {{ rule.text }}\n          </li>\n          } @empty {\n          <li class=\"rules-list__empty-message\">\n            Nenhuma lei encontrada. Carregando...\n          </li>\n          }\n        </ul>\n      </div>\n    </div>\n  `,\n  styleUrls: ['./rule-list.component.scss'],\n})\nexport class RuleListComponent implements OnInit {\n  private ferengiRulesService = inject(FerengiRulesService);\n\n  rules: Rule[] = [];\n\n  ngOnInit(): void {\n    this.rules = this.ferengiRulesService.getRules();\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use \"../../../../../styles/colors\" as colors;\n@use \"../../../../../styles/_breakpoints\" as bp;\n@use \"../../../../../styles/styles\" as styles;\n\n.rules-list {\n  width: 100%;\n  min-height: 100vh;\n  padding: 1.5rem 1rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  box-sizing: border-box;\n\n  &__nav {\n    width: 100%;\n    max-width: bp.$breakpoint-lg;\n    text-align: right;\n    margin-bottom: 1.5rem;\n\n    a {\n      @include styles.retro-button-styles;\n    }\n  }\n\n  &__title {\n    font-size: 2.2rem;\n    text-align: center;\n    margin: 0 0 2rem 0;\n    color: colors.$retro-text;\n    width: 100%;\n    max-width: bp.$breakpoint-lg;\n  }\n\n  &__content {\n    width: 100%;\n    max-width: bp.$breakpoint-lg;\n    padding: 0;\n    overflow: hidden;\n    max-height: 75vh;\n    display: flex;\n    flex-direction: column;\n    border: 2px solid colors.$retro-border-dark;\n    box-shadow: 3px 3px 0px 0px colors.$retro-border-dark;\n  }\n\n  &__list {\n    list-style: none;\n    padding: 0;\n    margin: 0;\n    color: colors.$retro-text;\n    overflow-y: auto;\n    flex-grow: 1;\n\n    &::-webkit-scrollbar {\n      width: 10px;\n    }\n    &::-webkit-scrollbar-track {\n      background: colors.$retro-bg;\n      border-radius: 5px;\n      border-left: 2px solid colors.$retro-border-dark;\n    }\n    &::-webkit-scrollbar-thumb {\n      background-color: colors.$latinum-gold;\n      border-radius: 5px;\n      border: 2px solid colors.$retro-border-dark;\n    }\n    &::-webkit-scrollbar-thumb:hover {\n      background-color: colors.$latinum-gold-dark;\n    }\n    scrollbar-width: thin;\n    scrollbar-color: colors.$latinum-gold colors.$retro-bg;\n  }\n\n  &__item {\n    padding: 1rem 1.5rem;\n    line-height: 1.6;\n    border-bottom: 2px solid colors.$retro-border;\n    transition: background-color 0.2s ease-in-out;\n    display: flex;\n    align-items: baseline;\n    gap: 0.75rem;\n\n    &:last-child {\n      border-bottom: none;\n    }\n\n    &:nth-child(odd) {\n      background-color: rgba(colors.$latinum-gold, 0.05);\n    }\n    &:hover {\n      background-color: rgba(colors.$latinum-gold, 0.1);\n    }\n\n    strong {\n      flex-shrink: 0;\n      font-family: \"Oswald\", sans-serif;\n      color: colors.$latinum-gold-dark;\n      font-weight: 700;\n      min-width: 50px;\n      display: inline-block;\n      text-align: right;\n      font-size: 1.1em;\n    }\n  }\n\n  &__empty-message {\n    padding: 2rem 1.5rem;\n    line-height: 1.6;\n    font-style: italic;\n    text-align: center;\n    color: colors.$retro-text-secondary;\n    font-size: 1rem;\n  }\n\n  @media (min-width: bp.$breakpoint-sm) {\n    padding: 2rem;\n\n    &__title {\n      font-size: 2.8rem;\n    }\n\n    &__content {\n      padding: 0;\n    }\n\n    &__item {\n      padding: 1.2rem 2rem;\n      strong {\n        min-width: 60px;\n      }\n    }\n  }\n\n  @media (min-width: bp.$breakpoint-md) {\n    &__item strong {\n      min-width: 65px;\n    }\n  }\n}\n",
+                    "styleUrl": "./rule-list.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ]
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "app",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "express()"
+            },
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay())]\n}"
+            },
+            {
+                "name": "bootstrap",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/main.server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "() => bootstrapApplication(AppComponent, config)"
+            },
+            {
+                "name": "browserDistFolder",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "resolve(serverDistFolder, '../browser')"
+            },
+            {
+                "name": "commonEngine",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "new CommonEngine()"
+            },
+            {
+                "name": "config",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "mergeApplicationConfig(appConfig, serverConfig)"
+            },
+            {
+                "name": "indexHtml",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "join(serverDistFolder, 'index.server.html')"
+            },
+            {
+                "name": "serverConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [\n    provideServerRendering(),\n  ]\n}"
+            },
+            {
+                "name": "serverDistFolder",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/server.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "dirname(fileURLToPath(import.meta.url))"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/server.ts": [
+                {
+                    "name": "app",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "express()"
+                },
+                {
+                    "name": "browserDistFolder",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "resolve(serverDistFolder, '../browser')"
+                },
+                {
+                    "name": "commonEngine",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "new CommonEngine()"
+                },
+                {
+                    "name": "indexHtml",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "join(serverDistFolder, 'index.server.html')"
+                },
+                {
+                    "name": "serverDistFolder",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "dirname(fileURLToPath(import.meta.url))"
+                }
+            ],
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay())]\n}"
+                }
+            ],
+            "src/main.server.ts": [
+                {
+                    "name": "bootstrap",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/main.server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "() => bootstrapApplication(AppComponent, config)"
+                }
+            ],
+            "src/app/app.config.server.ts": [
+                {
+                    "name": "config",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "mergeApplicationConfig(appConfig, serverConfig)"
+                },
+                {
+                    "name": "serverConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.server.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [\n    provideServerRendering(),\n  ]\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 0,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "config",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "serverConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/components/quiz-actions/quiz-actions.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "QuizActionsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/components/quiz-alternatives/quiz-alternatives.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "QuizAlternativesComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/components/quiz-feedback/quiz-feedback.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "QuizFeedbackComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/components/quiz-question/quiz-question.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "QuizQuestionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/components/quiz-score/quiz-score.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "QuizScoreComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Alternative",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "FerengiQuoteMap",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Question",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/models/ferengi-rules.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Rule",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/services/ferengi-rules.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "FerengiRulesService",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/views/game-view/game-view.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "GameViewComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/27",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/ferengi-rules/views/rule-list/rule-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "RuleListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/intro/intro-view.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IntroViewComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/features/intro/models/intro.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IntroSlide",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/shared/button/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/main.server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "bootstrap",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "app",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "browserDistFolder",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "commonEngine",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "indexHtml",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/server.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "serverDistFolder",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}
