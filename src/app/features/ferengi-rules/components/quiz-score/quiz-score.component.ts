@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-quiz-score',
-  standalone: true,
   imports: [],
   template: `
     <div class="quiz-score">
