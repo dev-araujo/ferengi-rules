@@ -15,6 +15,7 @@ Os Ferengi em Star Trek simbolizam uma sátira do capitalismo extremo e da cultu
 ## Resultado ✨
 
 **[ Confira o resultado AQUI 🎨](https://ferengi-rules.vercel.app/)**
+
 **[Confira o Storybook AQUI 📑](https://ferengi-components.vercel.app/)**
 
 ![Interface do Jogo Ferengi](./src/assets/wallpaper.png)
@@ -24,7 +25,7 @@ Os Ferengi em Star Trek simbolizam uma sátira do capitalismo extremo e da cultu
 - **Angular**
 - **Storybook**
 
-Agradecimentos especiais ao [darkyen](https://gist.github.com/darkyen) que compilou as leis ferengi [aqui](https://gist.github.com/darkyen/120c46739985ebf3b39b)\*\*
+Agradecimentos especiais ao [darkyen](https://gist.github.com/darkyen) que compilou as leis ferengi **[aqui](https://gist.github.com/darkyen/120c46739985ebf3b39b)**
 
 ## Funcionalidades
 
