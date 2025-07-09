@@ -73,6 +73,6 @@ Para executar este projeto em seu ambiente de desenvolvimento, siga estas etapas
 
 #### Autor 👷
 
-<img src="https://media.licdn.com/dms/image/v2/D4D03AQFdtLzMPGq-iA/profile-displayphoto-shrink_200_200/B4DZXYBptVG8AY-/0/1743086067092?e=1749081600&v=beta&t=f3BTl84h34Tyak_VLwTjwH1ckx1jM_SrC7mGewpzMA4" width=120 />
+<img src="https://avatars.githubusercontent.com/u/97068163?v=4" width=120 />
 
 [Adriano P Araujo](https://www.linkedin.com/in/araujocode/)
