@@ -1,7 +1,13 @@
 
 <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=5965E0&labelColor=121214" alt="License">
 
+
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) ![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+
 # Quiz sobre As Leis de Aquisição Ferengi
+
+> **Você pode conferir o resultado 👉 [aqui](https://ferengi-rules.vercel.app/)**
+
 
 Este projeto é um divertido jogo de **quiz interativo**, desenvolvido com **Angular** 👽 + **Storybook** (para documentação dos componentes), como uma homenagem aos **Ferengi** e suas infames Leis de Aquisição do universo de Star Trek 🖖.
 
