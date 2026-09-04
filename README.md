@@ -6,7 +6,13 @@
 
 # Quiz sobre As Leis de Aquisição Ferengi
 
-> **Você pode conferir o resultado 👉 [aqui](https://ferengi-rules.vercel.app/)**
+![Interface do Jogo Ferengi](./src/assets/wallpaper.png)
+
+**Você pode conferir o resultado nos seguintes locais:** 
+
+- **[VERCEL](https://ferengi-rules.vercel.app/)**
+- **[AWS](http://ferengi-rules.s3-website-sa-east-1.amazonaws.com)**
+- **[Confira o Storybook AQUI 🎨 📑](https://ferengi-components.vercel.app/)**
 
 
 Este projeto é um divertido jogo de **quiz interativo**, desenvolvido com **Angular** 👽 + **Storybook** (para documentação dos componentes), como uma homenagem aos **Ferengi** e suas infames Leis de Aquisição do universo de Star Trek 🖖.
@@ -19,15 +25,6 @@ Os Ferengi em Star Trek simbolizam uma sátira do capitalismo extremo e da cultu
 
 > Saiba mais sobre os Ferengis [aqui](https://memory-alpha.fandom.com/pt/wiki/Ferengi#:~:text=Os%20ferengis%20ou%20ferenguis%20s%C3%A3o,afiados%20e%20a%20baixa%20estatura.)
 
-## Resultado ✨
-
-- **Você pode conferir o resultado nos seguintes locais:** 
-  - **[VERCEL](https://ferengi-rules.vercel.app/)**
-  - **[AWS](http://ferengi-rules.s3-website-sa-east-1.amazonaws.com)**
-
-- **[Confira o Storybook AQUI 🎨 📑](https://ferengi-components.vercel.app/)**
-
-![Interface do Jogo Ferengi](./src/assets/wallpaper.png)
 
 ## Feito com 🔨
 
